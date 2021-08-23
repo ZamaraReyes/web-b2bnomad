@@ -59,7 +59,7 @@ p, .dias, .submenu-area-usuario a {
   color: #4a4f54 !important;
 }
 
-p, label, input::placeholder, .formulario-contacto input[type=text], .formulario-contacto input[type=number], .formulario-contacto input[type=email], .formulario-contacto input[type=checkbox], .formulario-registro input[type=text], .formulario-registro input[type=number], .formulario-registro input[type=email], .formulario-registro input[type=checkbox], .formulario-registro select, #registrate span, .submenu li a, .menu-usuario li a, .area-usuario-menu li a, .btn-azul-izquierda, .btn-azul-derecha, .header .correo a, .header .telefono a, .valoracion-casa p, .valoracion-anfitrion p, .footer li a, .menu-usuario a, .dias, #menu-usuario a, #menu-usuario p, .paginacion-listado li, #nota-evaluacion, .submenu-area-usuario a {
+p, label, input::placeholder, .formulario-contacto input[type=text], .formulario-contacto input[type=number], .formulario-contacto input[type=email], .formulario-contacto input[type=checkbox], .formulario-registro input[type=text], .formulario-registro input[type=number], .formulario-registro input[type=email], .formulario-registro input[type=checkbox], .formulario-registro select, #registrate span, .submenu li a, .menu-usuario li a, .area-usuario-menu li a, .btn-azul-izquierda, .btn-azul-derecha, .header .correo a, .header .telefono a, .valoracion-casa p, .valoracion-anfitrion p, .footer li a, .menu-usuario a, .dias, #menu-usuario a, #menu-usuario p, .paginacion-listado li, #nota-evaluacion, .submenu-area-usuario a, .formulario-acceso input[type=email], .formulario-acceso input[type=password] {
 	font-weight: 300;
   font-family: 'Nunito', sans-serif;
 }
@@ -185,18 +185,18 @@ input[type=submit], button {
   margin-right: 5px;
 }
 
-.formulario-contacto input[type=text], .formulario-contacto input[type=number], .formulario-contacto input[type=email], .formulario-registro input[type=text], .formulario-registro input[type=number], .formulario-registro input[type=email], .formulario-registro select {
+.formulario-contacto input[type=text], .formulario-contacto input[type=number], .formulario-contacto input[type=email], .formulario-registro input[type=text], .formulario-registro input[type=number], .formulario-registro input[type=email], .formulario-registro select, .formulario-acceso input[type=email], .formulario-acceso input[type=password] {
 	padding: 10px;
 	margin: 5px 0;
   border-radius: 6px;
 	background-color: transparent;
 }
 
-.formulario-contacto input[type=text], .formulario-contacto input[type=number], .formulario-contacto input[type=email], .formulario-registro input[type=text], .formulario-registro input[type=number], .formulario-registro input[type=email], .formulario-registro select, .subir-archivo {
+.formulario-contacto input[type=text], .formulario-contacto input[type=number], .formulario-contacto input[type=email], .formulario-registro input[type=text], .formulario-registro input[type=number], .formulario-registro input[type=email], .formulario-registro select, .subir-archivo, .formulario-acceso input[type=email], .formulario-acceso input[type=password] {
   border: 1px solid #758592;
 }
 
-.formulario-contacto input[type=text], .formulario-contacto input[type=number], .formulario-contacto input[type=email], .chat input[type=text], .formulario-registro input[type=text], .formulario-registro input[type=number], .formulario-registro input[type=email], .formulario-registro select {
+.formulario-contacto input[type=text], .formulario-contacto input[type=number], .formulario-contacto input[type=email], .chat input[type=text], .formulario-registro input[type=text], .formulario-registro input[type=number], .formulario-registro input[type=email], .formulario-registro select, .formulario-acceso input[type=email], .formulario-acceso input[type=password] {
   width: 100%;
 }
 
@@ -306,7 +306,7 @@ footer p {
 	padding: 10px 0;
 }
 
-footer a, .valoracion-casa span, .valoracion-anfitrion span, h4, #menu-casa-responsive i {
+footer a, .valoracion-casa span, .valoracion-anfitrion span, h4, #menu-casa-responsive i, .frases-accesos a {
 	color: #f5b335;
 }
 
@@ -366,7 +366,7 @@ li:hover ul.submenu {
   position: absolute;
 }
 
-#que-es h2, #alojamientos h2, #experiencias h1, h3, .submenu li a, .ventana-cookies p, #mensaje-exito p, #mensaje-error p, .nombre-casa, .menu-usuario a, .modal-calendar h2, .frase-destacado, .frase-calendario, .redes-sociales i, #menu-usuario a, #menu-usuario p, #resultado-total-alojamientos, #resultado-fecha-llegada, #resultado-fecha-salida, #resultado-experiencia, #resultado-lugar, #resultado-total-alojamientos, #resultado-fecha-llegada, #resultado-fecha-salida, #resultado-experiencia, #resultado-lugar, #ficha-casa h1, #ficha-casa h2, #nombre-huespede, #anfitrion .nombre-anfitrion, .modal-casa h2, #ventana-disponibilidad h2, #datos-registro-bienvenido h2, .area-usuario-menu a, #area-usuario h2, .notificacion-noleida .nombre-notificacion, .nombre-emisor, .area-usuario-menu .datos-usuario p {
+#que-es h2, #alojamientos h2, #experiencias h1, h3, .submenu li a, .ventana-cookies p, #mensaje-exito p, #mensaje-error p, .nombre-casa, .menu-usuario a, .modal-calendar h2, .frase-destacado, .frase-calendario, .redes-sociales i, #menu-usuario a, #menu-usuario p, #resultado-total-alojamientos, #resultado-fecha-llegada, #resultado-fecha-salida, #resultado-experiencia, #resultado-lugar, #resultado-total-alojamientos, #resultado-fecha-llegada, #resultado-fecha-salida, #resultado-experiencia, #resultado-lugar, #ficha-casa h1, #ficha-casa h2, #nombre-huespede, #anfitrion .nombre-anfitrion, .modal-casa h2, #ventana-disponibilidad h2, #datos-registro-bienvenido h2, .area-usuario-menu a, #area-usuario h2, .notificacion-noleida .nombre-notificacion, .nombre-emisor, .area-usuario-menu .datos-usuario p, #iniciar-sesion h1 {
 	color: #243746;
 }
 
@@ -419,7 +419,7 @@ footer a:hover {
 	padding: 80px 0;
 }
 
-#experiencias, #registro, #ficha-casa, #area-usuario {
+#experiencias, #registro, #ficha-casa, #area-usuario, #iniciar-sesion {
   padding: 150px 0 80px;
 }
 
@@ -427,7 +427,7 @@ footer a:hover {
   padding: 0 0 80px;
 }
 
-#que-es .linea, #alojamientos .linea, #datos-registro-bienvenido .linea {
+#que-es .linea, #alojamientos .linea, #datos-registro-bienvenido .linea, #iniciar-sesion .linea {
   margin: auto;
 }
 
@@ -439,7 +439,7 @@ footer a:hover {
   margin: 0 10px;
 }
 
-#inicio, #que-es, #alojamientos h2, #mensaje-exito, #mensaje-error, .modal-calendar table, .fechas-disponibles table, .modal-calendar h2, #que-es .frase-destacado, #alojamiento .frase-destacado {
+#inicio, #que-es, #alojamientos h2, #mensaje-exito, #mensaje-error, .modal-calendar table, .fechas-disponibles table, .modal-calendar h2, #que-es .frase-destacado, #alojamiento .frase-destacado, #iniciar-sesion {
 	text-align: center;
 }
 
@@ -463,7 +463,7 @@ footer a:hover {
 	margin-bottom: 60px;
 }
 
-#experiencias .linea, #experiencias .frase-destacado, #datos-perfil .linea, #datos-perfil .frase-destacado, #inbox .linea, #inbox .frase-destacado, #notificaciones .linea, #notificaciones .frase-destacado, #mensajes .linea, #mensajes .frase-destacado, #mis-experiencias .linea, #mis-experiencias .frase-destacado, #favoritos .linea, #favoritos .frase-destacado, #gestionar-casa .linea, #gestionar-casa .frase-destacado, #experiencias-deseadas .linea, #experiencias-deseadas .frase-destacado {
+#experiencias .linea, #experiencias .frase-destacado, #datos-perfil .linea, #datos-perfil .frase-destacado, #inbox .linea, #inbox .frase-destacado, #notificaciones .linea, #notificaciones .frase-destacado, #mensajes .linea, #mensajes .frase-destacado, #mis-experiencias .linea, #mis-experiencias .frase-destacado, #favoritos .linea, #favoritos .frase-destacado, #gestionar-casa .linea, #gestionar-casa .frase-destacado, #experiencias-deseadas .linea, #experiencias-deseadas .frase-destacado, #iniciar-sesion .linea, #iniciar-sesion .frase-destacado {
   margin-bottom: 40px;
 }
 
@@ -471,7 +471,7 @@ footer a:hover {
 	margin-bottom: 70px;
 }
 
-footer p, .registro p, .acceso p, .ventana-cookies p, #alojamientos h3, .lugar-casa, .resultado-nombre-casa .experiencia-casa, .valoracion-casa span, .valoracion-casa p, #inicio p, #btn-intercambio p, #btn-peticiones p, #btn-nodisponible p, .modal-calendar h2, #buscador-modal p, .datos-usuario p, .resultado-nombre-casa h3, .caracteristica-casa, .resultado-busqueda p, .valoraciones p, #nombre-huespede, .servicios-alojamiento p, #anfitrion p, .leyenda-calendario p, #datos-casa h1, .nombre-anfitrion, .fecha-respuesta, .chat-escribiendo, .chat-usuario p, .chat-anfitrion p, #menu-casa-responsive p, .celda-registro p, #datos-perfil p, #gestionar-casa p, #notificaciones p, #inbox p, #mensajes p, .alojamiento-buscador h3, .alojamiento-reciente h3, .numero-imagenes p, .frase-calendario {
+footer p, .registro p, .acceso p, .ventana-cookies p, #alojamientos h3, .lugar-casa, .resultado-nombre-casa .experiencia-casa, .valoracion-casa span, .valoracion-casa p, #inicio p, #btn-intercambio p, #btn-peticiones p, #btn-nodisponible p, .modal-calendar h2, #buscador-modal p, .datos-usuario p, .resultado-nombre-casa h3, .caracteristica-casa, .resultado-busqueda p, .valoraciones p, #nombre-huespede, .servicios-alojamiento p, #anfitrion p, .leyenda-calendario p, #datos-casa h1, .nombre-anfitrion, .fecha-respuesta, .chat-escribiendo, .chat-usuario p, .chat-anfitrion p, #menu-casa-responsive p, .celda-registro p, #datos-perfil p, #gestionar-casa p, #notificaciones p, #inbox p, #mensajes p, .alojamiento-buscador h3, .alojamiento-reciente h3, .numero-imagenes p, .frase-calendario, .frases-accesos p {
 	margin-bottom: 0px;
 }
 
@@ -694,7 +694,7 @@ footer p, .registro p, .acceso p, .ventana-cookies p, #alojamientos h3, .lugar-c
   margin: auto auto 10px auto;
 }
 
-.resultado-busqueda, .frase-registro, .dato-usuario, .dato-casa {
+.resultado-busqueda, .frase-registro, .dato-usuario, .dato-casa, .formulario-acceso {
   margin-bottom: 30px;
 }
 
