@@ -2244,6 +2244,14 @@ footer, .calendario-mes, .top-bar, .bottom-bar, .notificacion-coins {
     padding: 5px 13px;
   }
 
+  nav a, .coins-menu p {
+    font-size: 16px;
+  }
+
+  .coins-menu p {
+    margin-bottom: 2px;
+  }
+
   .submenu {
     top: 0;
     left: 0;
@@ -2333,14 +2341,6 @@ footer, .calendario-mes, .top-bar, .bottom-bar, .notificacion-coins {
 }
 
 @media (max-width: 768px) {
-	nav a {
-		font-size: 16px;
-	}
-
-  /*.header ul {
-    margin-top: 20px;
-  }*/
-
 	.header li a {
 		color: #243746;
 	}
@@ -2445,10 +2445,6 @@ footer, .calendario-mes, .top-bar, .bottom-bar, .notificacion-coins {
   footer h4 {
     margin-top: 10px;
   }
-
-  /*#calendario-buscador {
-    width: 100%;
-  }*/
 
   .politicas {
     text-align: left;
