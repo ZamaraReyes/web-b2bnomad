@@ -1,4 +1,4 @@
-		<nav class="header">
+<nav class="header">
 			<div class="container">
 				<div class="row justify-content-between align-items-center">
 					<a href="/" class="col-7 col-md-2">
@@ -25,7 +25,7 @@
 						<li><a href="/comunidad">Comunidad</a></li>
 						<li><a href="/como-funciona">¿Cómo funciona?</a></li>
 						<li><a href="/contacto">Contacto</a></li>
-						<li><a href="#">ES <i class="fal fa-chevron-down"></i></a>
+						<li class="position-relative"><a href="#">ES <i class="fal fa-chevron-down"></i></a>
 							<ul class="submenu">
 								<li><a href="#">Español</a></li>
 								<li><a href="#">Inglés</a></li>
@@ -46,14 +46,34 @@
 					<div class="col-12 col-md-2 registro d-xl-flex align-items-center">
 						<p>Acceso/Registro</p><img src="./img/acceso-color.svg">
 					</div>
-					<div class="col-12 col-md-2 acceso ocultar d-xl-flex align-items-center">
+					<div class="col-12 col-md-2 acceso ocultar d-xl-flex align-items-center position-relative">
 						<p>Bienvenida, Carmen</p>
 						<div class="foto-usuario">
 							<div class="notificacion">3</div>
 							<img src="./img/carmen-bolanos.jpg" id="imagen-usuario">
 						</div>
+						<ul class="ocultar menu-usuario">
+							<li><a href="#">Datos del perfil</a></li>
+							<li><a href="#">Inbox <div class="notificacion">2</div><i class="fal fa-chevron-down"></i></a></li>
+								<ul class="ocultar submenu-usuario">
+		    						<li><a href="#">Mensajes</a></li>
+		    						<li><a href="#">Notificaciones</a></li>
+		    					</ul>
+							<li><a href="#">Gestionar mi casa</a></li>
+							<li><a href="#">Mis NomadCoins</a></li>
+							<li><a href="#">Mis experiencias <div class="notificacion-coins">10.000</div><i class="fal fa-chevron-down"></i></a></li>
+								<ul class="ocultar submenu-usuario">
+		    						<li><a href="#">Historial de viajes</a></li>
+		    						<li><a href="#">Mis próximos viajes</a></li>
+		    					</ul>
+							<li><a href="#">Favoritos</a></li>
+							<li><a href="#">Comunidad</a></li>
+							<li><a href="#">Cómo funciona B2BNomad</a></li>
+							<li><a href="#">Te ayudamos</a></li>
+							<li><a href="#">Cerrar sesión</a></li>
+						</ul>
 					</div>
-					<div id="buscador-modal" class="row justify-content-center">
+					<div id="buscador-modal" class="d-flex justify-content-center ocultar">
 						<div class="col-12 col-md-12 col-lg-9 buscador">
 							<div class="row">
 								<div class="col-3 borde-derecho">
@@ -77,27 +97,96 @@
 								</div>
 							</div>
 						</div>
+					
+						<div id="calendario-buscador" class="col-12 col-md-12 col-lg-9 col-xl-8 calendario-sticky ocultar">
+							<div class="d-flex justify-content-center align-items-center h-100">
+								<div class="row modal-calendar">
+									<div id="boton-cerrar">
+										<i class="fas fa-times"></i>
+									</div>
+									<h2>Calendario</h2>
+									<p class="frase-destacado">Tu próximo destino te espera ¡Tu eliges cuando!</p>
+									<div class="col-12 col-md-6">
+										<div class="calendario-mes">      
+											<ul class="d-flex justify-content-between align-items-center">
+												<li class="prev"><i class="fas fa-chevron-left"></i></li>				
+												  <li>Julio 2021</li>
+												  <li class="next"><i class="fas fa-chevron-right"></i></li>
+											</ul>
+										</div>
+										<table>
+											<thead class="calendario-dia">
+												<tr>
+													<td>lu</td>
+													<td>ma</td>
+													<td>mi</td>
+													<td>ju</td>
+													<td>vi</td>
+													<td>sá</td>
+													<td>do</td>
+												</tr>
+											</thead>
+											<tbody class="dias">
+												<tr>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td class="dia-desactivo calendar-start">1</td>
+													<td class="dia-desactivo">2</td>
+													<td class="dia-desactivo">3</td>
+													<td class="dia-desactivo calendar-end">4</td>
+												</tr>
+												<tr>
+													<td class="dia-intercambio calendar-start">5</td>
+													<td class="dia-intercambio">6</td>
+													<td class="dia-intercambio">7</td>
+													<td class="dia-intercambio">8</td>
+													<td class="dia-intercambio">9</td>
+													<td class="dia-intercambio">10</td>
+													<td class="dia-intercambio calendar-end">11</td>
+												</tr>
+												<tr>
+													<td class="dia-intercambio calendar-start">12</td>
+													<td class="dia-intercambio">13</td>
+													<td class="dia-intercambio">14</td>
+													<td class="dia-intercambio">15</td>
+													<td class="dia-intercambio">16</td>
+													<td class="dia-intercambio">17</td>
+													<td class="dia-intercambio calendar-end">18</td>
+												</tr>
+												<tr>
+													<td>19</td>
+													<td>20</td>
+													<td>21</td>
+													<td>22</td>
+													<td>23</td>
+													<td>24</td>
+													<td>25</td>
+												</tr>
+												<tr> 
+													<td>26</td>
+													<td>27</td>
+													<td>28</td>
+													<td>29</td>
+													<td>30</td>
+													<td>31</td>
+													<td></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="col-12 col-md-6 d-flex align-items-end text-start">
+										<div class="opciones-calendario">
+											<p class="frase-calendario">¿Qué tipo de experiencias estás buscando?</p>
+											<div id="btn-intercambio"><p>Disponible para el intercambio.</p></div>
+											<div id="btn-peticiones"><p>Dispuesto a recibir peticiones.</p></div>
+											<div id="btn-nodisponible"><p>No disponible para el intercambio.</p></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
-					<ul class="ocultar menu-usuario">
-						<li><a href="#">Datos del perfil</a></li>
-						<li><a href="#">Inbox <i class="fal fa-chevron-down"></i></a></li>
-							<ul class="ocultar submenu-usuario">
-	    						<li><a href="#">Mensajes</a></li>
-	    						<li><a href="#">Notificaciones</a></li>
-	    					</ul>
-						<li><a href="#">Gestionar mi casa</a></li>
-						<li><a href="#">Mis NomadCoins</a></li>
-						<li><a href="#">Mis experiencias <i class="fal fa-chevron-down"></i></a></li>
-							<ul class="ocultar submenu-usuario">
-	    						<li><a href="#">Historial de viajes</a></li>
-	    						<li><a href="#">Mis próximos viajes</a></li>
-	    					</ul>
-						<li><a href="#">Favoritos</a></li>
-						<li><a href="#">Comunidad</a></li>
-						<li><a href="#">Cómo funciona B2BNomad</a></li>
-						<li><a href="#">Te ayudamos</a></li>
-						<li><a href="#">Cerrar sesión</a></li>
-					</ul>
 				</div>
 			</div>
 		</nav>

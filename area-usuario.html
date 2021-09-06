@@ -15,17 +15,17 @@
 					    				<li><a href="#">Mensajes <div class="notificacion">1</div></a></li>
 					    				<li><a href="#">Notificaciones <div class="notificacion">1</div></a></li>
 					    			</ul>
-								<li><a href="#">Gestionar mi casa</a></li>
-								<li><a href="#">Mis NomadCoins <div class="notificacion">120</div></a></li>
+								<li><a href="/gestionar-mi-casa">Gestionar mi casa</a></li>
+								<li><a href="#">Mis NomadCoins <div class="notificacion-coins">10.000</div></a></li>
 								<li><a href="#" class="mis-experiencias">Mis experiencias <i class="fal fa-chevron-down"></i></a></li>
 									<ul class="ocultar submenu-usuario">
 					    				<li><a href="#">Historial de viajes</a></li>
 					    				<li><a href="#">Mis próximos viajes</a></li>
 					    			</ul>
 								<li><a href="#">Favoritos</a></li>
-								<li><a href="#">Comunidad</a></li>
-								<li><a href="#">Cómo funciona B2BNomad</a></li>
-								<li><a href="#">Te ayudamos</a></li>
+								<li><a href="/comunidad">Comunidad</a></li>
+								<li><a href="/como-funciona">Cómo funciona B2BNomad</a></li>
+								<li><a href="/contacto">Te ayudamos</a></li>
 								<li><a href="#">Cerrar sesión</a></li>
 							</ul>
 						</div>
@@ -80,191 +80,57 @@
 							</div>
 
 							<div id="datos-perfil" class="ocultar">
-								<h2>Información personal</h2>
-								<div class="linea"></div>
-								<div class="row">
-									<div class="col-12 col-md-6">
-										<div class="dato-usuario">
-											<div class="d-flex justify-content-between align-items-baseline">
-												<p class="titulo-dato">Nombre completo</p>
-												<p class="editar-dato">Editar</p>
-											</div>
-											<p>Carmen Bolaños Martín</p>
-										</div>
-										<div class="dato-usuario">
-											<div class="d-flex justify-content-between align-items-baseline">
-												<p class="titulo-dato">Sexo</p>
-												<p class="editar-dato">Editar</p>
-											</div>
-											<p>7 de abril de 1973</p>
-										</div>
-										<div class="dato-usuario">
-											<div class="d-flex justify-content-between align-items-baseline">
-												<p class="titulo-dato">Documento de identidad oficial</p>
-												<p class="editar-dato">Editar</p>
-											</div>
-											<p>DNI.jpg</p>
-										</div>
-										<div class="dato-usuario">
-											<div class="d-flex justify-content-between align-items-baseline">
-												<p class="titulo-dato">Dirección</p>
-												<p class="editar-dato">Editar</p>
-											</div>
-											<p>Calle Bravo Murillo, 23</p>
-										</div>
-										<div class="dato-usuario">
-											<div class="d-flex justify-content-between align-items-baseline">
-												<p class="titulo-dato">Correo electrónico</p>
-												<p class="editar-dato">Editar</p>
-											</div>
-											<p>carmenbolama@gmail.com</p>
-										</div>
-										<div class="dato-usuario">
-											<div class="d-flex justify-content-between align-items-baseline">
-												<p class="titulo-dato">Número de teléfono</p>
-												<p class="editar-dato">Editar</p>
-											</div>
-											<p>+34 640 956 293</p>
-										</div>
-									</div>
-									<div class="col-12 col-md-6">
-										<div class="dato-usuario">
-											<div class="d-flex justify-content-between align-items-baseline">
-												<p class="titulo-dato">Nombre completo</p>
-												<p class="editar-dato">Editar</p>
-											</div>
-											<p>Carmen Bolaños Martín</p>
-										</div>
-										<div class="dato-usuario">
-											<div class="d-flex justify-content-between align-items-baseline">
-												<p class="titulo-dato">Sexo</p>
-												<p class="editar-dato">Editar</p>
-											</div>
-											<p>7 de abril de 1973</p>
-										</div>
-										<div class="dato-usuario">
-											<div class="d-flex justify-content-between align-items-baseline">
-												<p class="titulo-dato">Documento de identidad oficial</p>
-												<p class="editar-dato">Editar</p>
-											</div>
-											<p>DNI.jpg</p>
-										</div>
-										<div class="dato-usuario">
-											<div class="d-flex justify-content-between align-items-baseline">
-												<p class="titulo-dato">Dirección</p>
-												<p class="editar-dato">Editar</p>
-											</div>
-											<p>Calle Bravo Murillo, 23</p>
-										</div>
-										<div class="dato-usuario">
-											<div class="d-flex justify-content-between align-items-baseline">
-												<p class="titulo-dato">Correo electrónico</p>
-												<p class="editar-dato">Editar</p>
-											</div>
-											<p>carmenbolama@gmail.com</p>
-										</div>
-										<div class="dato-usuario">
-											<div class="d-flex justify-content-between align-items-baseline">
-												<p class="titulo-dato">Número de teléfono</p>
-												<p class="editar-dato">Editar</p>
-											</div>
-											<p>+34 640 956 293</p>
-										</div>
+								<div class="d-flex justify-content-between align-items-baseline">
+									<h2>Información personal</h2>
+									<div class="btn-editar">
+										<i class="far fa-edit"></i>
 									</div>
 								</div>
-							</div>
-
-							<div id="gestionar-casa" class="ocultar">
-								<h2>Gestionar mi casa</h2>
 								<div class="linea"></div>
 								<div class="row">
-									<div class="col-12 col-md-6">
-										<div class="dato-casa">
-											<div class="d-flex justify-content-between align-items-baseline">
-												<p class="titulo-dato">Tipo de vivienda</p>
-												<p class="editar-dato">Editar</p>
-											</div>
-											<p>Casa</p>
-										</div>
-										<div class="dato-casa">
-											<div class="d-flex justify-content-between align-items-baseline">
-												<p class="titulo-dato">Ubicación</p>
-												<p class="editar-dato">Editar</p>
-											</div>
-											<p>Calle Bravo Murillo, 23</p>
-										</div>
-										<div class="dato-casa">
-											<div class="d-flex justify-content-between align-items-baseline">
-												<p class="titulo-dato">Número de habitaciones</p>
-												<p class="editar-dato">Editar</p>
-											</div>
-											<p>3</p>
-										</div>
-										<div class="dato-casa">
-											<div class="d-flex justify-content-between align-items-baseline">
-												<p class="titulo-dato">Número de baños</p>
-												<p class="editar-dato">Editar</p>
-											</div>
-											<p>1</p>
-										</div>
-										<div class="dato-casa">
-											<div class="d-flex justify-content-between align-items-baseline">
-												<p class="titulo-dato">Dirección</p>
-												<p class="editar-dato">Editar</p>
-											</div>
-											<p>Calle Bravo Murillo, 23</p>
-										</div>
-										<div class="dato-casa">
-											<div class="d-flex justify-content-between align-items-baseline">
-												<p class="titulo-dato">Verificación de domicilio</p>
-												<p class="editar-dato">Editar</p>
-											</div>
-											<p>propiedad_casa.pdf</p>
-										</div>
+									<div class="dato-usuario col-12 col-md-6">
+										<p class="titulo-dato">Nombre completo</p>
+										<p>Carmen Bolaños Martín</p>
 									</div>
-									<div class="col-12 col-md-6">
-										<div class="dato-casa">
-											<div class="d-flex justify-content-between align-items-baseline">
-												<p class="titulo-dato">Tipo de vivienda</p>
-												<p class="editar-dato">Editar</p>
-											</div>
-											<p>Casa</p>
-										</div>
-										<div class="dato-casa">
-											<div class="d-flex justify-content-between align-items-baseline">
-												<p class="titulo-dato">Ubicación</p>
-												<p class="editar-dato">Editar</p>
-											</div>
-											<p>Calle Bravo Murillo, 23</p>
-										</div>
-										<div class="dato-casa">
-											<div class="d-flex justify-content-between align-items-baseline">
-												<p class="titulo-dato">Número de habitaciones</p>
-												<p class="editar-dato">Editar</p>
-											</div>
-											<p>3</p>
-										</div>
-										<div class="dato-casa">
-											<div class="d-flex justify-content-between align-items-baseline">
-												<p class="titulo-dato">Número de baños</p>
-												<p class="editar-dato">Editar</p>
-											</div>
-											<p>1</p>
-										</div>
-										<div class="dato-casa">
-											<div class="d-flex justify-content-between align-items-baseline">
-												<p class="titulo-dato">Dirección</p>
-												<p class="editar-dato">Editar</p>
-											</div>
-											<p>Calle Bravo Murillo, 23</p>
-										</div>
-										<div class="dato-casa">
-											<div class="d-flex justify-content-between align-items-baseline">
-												<p class="titulo-dato">Verificación de domicilio</p>
-												<p class="editar-dato">Editar</p>
-											</div>
-											<p>propiedad_casa.pdf</p>
-										</div>
+									<div class="dato-usuario col-12 col-md-6">
+										<p class="titulo-dato">DNI</p>
+										<p>65849506H</p>
+									</div>
+									<div class="dato-usuario col-12 col-md-6">
+										<p class="titulo-dato">Sexo</p>
+										<p>Mujer</p>
+									</div>
+									<div class="dato-usuario col-12 col-md-6">
+										<p class="titulo-dato">Fecha de nacimiento</p>
+										<p>7 de abril de 1973</p>
+									</div>
+									<div class="dato-usuario col-12 col-md-6">
+										<p class="titulo-dato">Correo electrónico</p>
+										<p>carmenbolama@gmail.com</p>
+									</div>
+									<div class="dato-usuario col-12 col-md-6">
+										<p class="titulo-dato">Número de teléfono</p>
+										<p>+34 640 956 293</p>
+									</div>
+									<div class="dato-usuario col-12 col-md-6">
+										<p class="titulo-dato">Dirección</p>
+										<p>Calle Bravo Murillo, 23</p>
+									</div>
+									<div class="dato-usuario col-12 col-md-6">
+										<p class="titulo-dato">Provincia</p>
+										<p>Las Palmas de Gran Canaria</p>
+									</div>
+									<div class="dato-usuario col-12 col-md-6">
+										<p class="titulo-dato">Municipio</p>
+										<p>Las Palmas</p>
+									</div>
+									<div class="dato-usuario col-12 col-md-6">
+										<p class="titulo-dato">Código postal</p>
+										<p>35003</p>
+									</div>
+									<div class="dato-usuario col-12 col-md-6">
+										<p class="titulo-dato">Descripción personal</p>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 									</div>
 								</div>
 							</div>

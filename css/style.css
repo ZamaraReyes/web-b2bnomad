@@ -2,19 +2,37 @@ h1 {
 	font-size: 48px;
 }
 
-h2 {
+h2, .precio {
 	font-size: 42px;
+}
+
+textarea {
+  resize: none;
+}
+
+.precio {
+  line-height: 1;
+  margin-top: 10px;
+}
+
+.promociones .precio {
+  line-height: 1.6;
+  margin-top: 0px;
+}
+
+.formulario-contacto textarea {
+  height: 150px;
 }
 
 .numero-imagenes p {
   font-size: 10px;
 }
 
-.modal-calendar h2, #anfitrion .nombre-anfitrion, #ventana-disponibilidad h2 {
+.modal-calendar h2, #anfitrion .nombre-anfitrion, #ventana-disponibilidad h2, .nomad-promo h2 {
   font-size: 32px;
 }
 
-.datos-usuario p {
+.datos-usuario p, .frase-destacado, .redes-sociales i, .submenu-area-usuario a, .titulo-registro, .frase-calendario, #datos-casa .lugar-casa, .calendario-mes, .frase-promo {
   font-size: 20px;
 }
 
@@ -26,12 +44,61 @@ h2 {
   margin: 10px 0 20px;
 }
 
-h3, .nombre-casa, .frase-destacado, .resultado-nombre-casa i, .top-bar .nombre-anfitrion, #menu-casa-responsive i, .titulo-registro, .frase-registro, .nombre-emisor, .area-usuario-menu .datos-usuario p, #ventana-galeria button, .frase-servicio {
+h3, .nombre-casa, .resultado-nombre-casa i, .top-bar .nombre-anfitrion, #menu-casa-responsive i, .frase-registro, .nombre-emisor, .area-usuario-menu .datos-usuario p, #ventana-galeria button, .frase-servicio, .btn-editar i, #sidebar-casa h2, .cambiar-imagen-perfil i, .promociones .nomad-promo h2, .crear-publicacion i, .publicacion .caja-texto i, .publicacion .opciones-publicacion i, .subir-imagen i, .coins-usuario {
 	font-size: 24px;
 }
 
-h1, h2, h3, h4, .buscador label, .nombre-casa, .calendario-mes, .calendario-dia, .frase-calendario, .resultado-busqueda p, #nombre-huespede, .nombre-anfitrion, .titulo-registro, .subir-archivo p, .frase-registro, .titulo-dato, .nombre-emisor, .notificacion-noleida .nombre-notificacion, .mensaje-noleido .ultimo-mensaje, .notificacion-noleida .fecha-notificacion, .frase-servicio {
+.publicacion .info-usuario .nombre-usuario {
+  font-size: 24px !important;
+}
+
+
+h1, h2, h3, h4, .formulario-registro label, .buscador label, .nombre-casa, .calendario-mes, .calendario-dia, .frase-calendario, .resultado-busqueda p, #nombre-huespede, .nombre-anfitrion, .titulo-registro, .subir-archivo p, .frase-registro, .titulo-dato, .nombre-emisor, .notificacion-noleida .nombre-notificacion, .mensaje-noleido .ultimo-mensaje, .notificacion-noleida .fecha-notificacion, .frase-servicio, .precio, .publicacion .likes-publicacion span, .publicacion .descripcion-publicacion span, .publicacion .opciones-comentario div p, .publicacion .nombre-usuario {
 	font-weight: 700;
+}
+
+.nomad-promo {
+  margin: 10px 0;
+  padding: 50px 25px;
+}
+
+.nomad-promo, .crear-publicacion, .publicacion, .chat-contactos, .info-usuario {
+  border-radius: 24px;
+  box-shadow: 0px 0px 2px rgb(80 80 80 / 10%);
+}
+
+.promociones .nomad-promo, .crear-publicacion, .publicacion, .chat-contactos, .info-usuario {
+  padding: 25px;
+}
+
+.promociones .nomad-promo .btn-verde {
+  padding: 12px 25px 9px;
+}
+
+#btn-contactos img, #btn-publicar img {
+  padding: 15px;
+}
+
+.modal-contenido .crear-publicacion, .modal-contenido .chat-contactos {
+  padding: 0;
+}
+
+.modal-contenido .crear-publicacion, .modal-contenido .chat-contactos, .modal-contenido .crear-publicacion:hover, .modal-contenido .chat-contactos:hover {
+  box-shadow: none;
+}
+
+.nomad-promo img, .formulario-registro textarea {
+  height: 100px;
+}
+
+.nomad-promo img {
+  width: 90px;
+  margin-bottom: 20px;
+}
+
+.nomad-promo:hover, .crear-publicacion:hover, .publicacion:hover, .chat-contactos:hover, .info-usuario:hover {
+  transition: all .2s ease-out;
+  box-shadow: 0px 0px 20px rgb(80 80 80 / 10%);
 }
 
 .nombre-anfitrion {
@@ -43,15 +110,15 @@ h1, h2, h3, h4, .buscador label, .nombre-casa, .calendario-mes, .calendario-dia,
   font-weight: 700 !important;
 }
 
-h1, h2, h3, h4, .menu li a, .btn-verde, .btn-naranja, .btn-buscador, .buscador label, .nombre-casa, .experiencia-casa, .valoracion-casa span, .valoracion-anfitrion span, .calendario-mes, .calendario-dia, .frase-calendario, .resultado-busqueda p, .nombre-anfitrion, .frase-registro, .nombre-emisor, .frase-servicio {
+h1, h2, h3, h4, .menu li a, .btn-verde, .btn-naranja, .btn-rojo, .btn-buscador, .buscador label, .nombre-casa, .experiencia-casa, .valoracion-casa span, .valoracion-anfitrion span, .calendario-mes, .calendario-dia, .frase-calendario, .resultado-busqueda p, .nombre-anfitrion, .frase-registro, .nombre-emisor, .frase-servicio, .precio, .chat-contactos .datos-usuario p, .publicacion .nombre-usuario {
 	font-family: 'Josefin Sans', sans-serif;
 }
 
-h1, h2, h3, h4, .menu li a, .btn-verde, .btn-naranja, .btn-buscador, .buscador label, .nombre-casa, .experiencia-casa, .valoracion-casa span, .valoracion-anfitrion span, .calendario-mes, .resultado-busqueda p, .nombre-anfitrion, .subir-archivo, .frase-registro, .nombre-emisor, .frase-servicio {
+h1, h2, h3, h4, .menu li a, .btn-verde, .btn-naranja, .btn-rojo, .btn-buscador, .buscador label, .nombre-casa, .experiencia-casa, .valoracion-casa span, .valoracion-anfitrion span, .calendario-mes, .resultado-busqueda p, .nombre-anfitrion, .subir-archivo, .frase-registro, .nombre-emisor, .frase-servicio, .chat-contactos .datos-usuario p, .publicacion .nombre-usuario {
   text-transform: uppercase;
 }
 
-p, .dias, .submenu-area-usuario a {
+p, .dias, .submenu-area-usuario a, .formulario-registro label, .frase-promo, .publicacion .comentarios-publicacion i {
 	color: #4a4f54;
 }
 
@@ -59,7 +126,7 @@ p, .dias, .submenu-area-usuario a {
   color: #4a4f54 !important;
 }
 
-p, label, input::placeholder, .formulario-contacto input[type=text], .formulario-contacto input[type=number], .formulario-contacto input[type=email], .formulario-contacto input[type=checkbox], .formulario-registro input[type=text], .formulario-registro input[type=number], .formulario-registro input[type=email], .formulario-registro input[type=checkbox], .formulario-registro select, #registrate span, .submenu li a, .menu-usuario li a, .area-usuario-menu li a, .btn-azul-izquierda, .btn-azul-derecha, .header .correo a, .header .telefono a, .valoracion-casa p, .valoracion-anfitrion p, .footer li a, .menu-usuario a, .dias, #menu-usuario a, #menu-usuario p, .paginacion-listado li, #nota-evaluacion, .submenu-area-usuario a, .formulario-acceso input[type=email], .formulario-acceso input[type=password] {
+p, label, input::placeholder, .formulario-contacto input[type=text], .formulario-contacto input[type=number], .formulario-contacto input[type=email], .formulario-contacto textarea, .formulario-contacto input[type=checkbox], .formulario-registro input[type=text], .formulario-registro input[type=number], .formulario-registro input[type=email], .formulario-registro input[type=checkbox], .formulario-registro textarea, .formulario-contacto input[type=email], .formulario-contacto select, .formulario-registro select, .formulario-registro input[type=file], #contacto span, .submenu li a, .menu-usuario li a, .area-usuario-menu li a, .btn-azul-izquierda, .btn-azul-derecha, .header .correo a, .header .telefono a, .valoracion-casa p, .valoracion-anfitrion p, .footer li a, .menu-usuario a, .dias, #menu-usuario a, #menu-usuario p, .paginacion-listado li, #nota-evaluacion, .submenu-area-usuario a, .formulario-acceso input[type=email], .formulario-acceso input[type=password], .subir-documento .nombre-archivo, .subir-documento .btn-subir-archivo, .crear-publicacion textarea {
 	font-weight: 300;
   font-family: 'Nunito', sans-serif;
 }
@@ -73,7 +140,7 @@ nav, #menu-usuario, #menu-casa-responsive {
   position: fixed;
 }
 
-nav a, .registro p, .acceso p, .btn-buscador i, .buscador input, .buscador p, #menu-casa-responsive a {
+nav a, .registro p, .acceso p, .btn-buscador i, .buscador input, .buscador p, #menu-casa-responsive a, .tiempo-contacto {
 	font-size: 12px;
 }
 
@@ -85,12 +152,32 @@ nav a, .registro p, .acceso p, .btn-buscador i, .buscador input, .buscador p, #m
   height: 50px;
 }
 
-.calendario-mes {
+.calendario-mes, .publicacion .comentarios-publicacion, .caja-texto {
   margin-top: 20px;
+}
+
+.publicacion, .btn-naranja, .btn-verde, #datos-seguridad .btn-verde {
+  margin: 40px 10px 0 10px;
 }
 
 .datos-usuario {
   margin: 30px 0;
+}
+
+.publicacion {
+  position: relative;
+}
+
+.publicacion .datos-usuario, #ventana-editar-casa .portada-alojamiento, #promos img {
+  margin-bottom: 10px;
+}
+
+.publicacion .datos-usuario, .imagen-publicacion {
+  margin-bottom: 20px;
+}
+
+.crear-publicacion .datos-usuario, .publicacion .datos-usuario, #ventana-disponibilidad .calendario-mes, #gestionar-casa .titulo-registro {
+  margin-top: 0px;
 }
 
 nav ul > li, .menuicon ul > li {
@@ -104,7 +191,7 @@ nav li a {
   cursor: pointer;
 }
 
-nav li a, .paginacion-listado a {
+nav li a, .paginacion-listado a, .publicacion .comentario a, .publicacion .nombre-usuario {
   text-decoration: none;
 }
 
@@ -143,7 +230,7 @@ li {
 	list-style: none;
 }
 
-nav li a, h1, .menu li a, footer p, .btn-buscador, .btn-buscador:hover, .btn-verde, .btn-naranja, .btn-verde:hover, .btn-naranja:hover, .btn-azul-izquierda, .btn-azul-derecha, .btn-azul-izquierda:hover, .btn-azul-derecha:hover, .footer li a, .menu-responsive i, .calendario-mes, .dia-intercambio, .dia-peticiones, .dia-nodisponible, #btn-intercambio:hover p, #btn-peticiones:hover p, #btn-nodisponible:hover p, #buscador-sticky, #buscador-responsive, .notificacion, .favorito i, .fecha-respuesta, .chat [type=submit], .chat-usuario p, .chat-anfitrion p, .formulario-registro button:hover, .numero-imagenes p {
+nav li a, h1, .menu li a, footer p, .btn-buscador, .btn-buscador:hover, .btn-verde, .btn-naranja, .btn-verde:hover, .btn-naranja:hover, .btn-rojo, .btn-rojo:hover, .btn-azul-izquierda, .btn-azul-derecha, .btn-azul-izquierda:hover, .btn-azul-derecha:hover, .footer li a, .menu-responsive i, .calendario-mes, .dia-intercambio, .dia-peticiones, .dia-nodisponible, #btn-intercambio:hover p, #btn-peticiones:hover p, #btn-nodisponible:hover p, #buscador-sticky, #buscador-responsive, .notificacion, .notificacion-coins, .favorito i, .fecha-respuesta, .chat [type=submit], .chat-usuario p, .chat-anfitrion p, .formulario-registro button:hover, .numero-imagenes p, .cambiar-imagen-perfil i, .subir-documento .btn-subir-archivo, #ventana-editar-casa .portada-alojamiento button i, #boton-cerrar i {
 	color: #fff;
 }
 
@@ -151,19 +238,19 @@ nav li a, h1, .menu li a, footer p, .btn-buscador, .btn-buscador:hover, .btn-ver
   color: #fff !important;
 }
 
-header {
+/*header {
 	background-size: cover;
 	background-position: bottom;
 	background-image: url(../img/b2bnomad.jpeg);
-}
-
-header, #menu-usuario {
-  height: 100vh;
-}
-
-/*#listado-alojamientos, #datos-casa {
-  height: 100vh;
 }*/
+
+/*header, #inicio:after {
+  height: 100%;
+}*/
+
+#menu-usuario {
+  height: 100vh;
+}
 
 input[type=submit] {
 	margin-top: 20px;
@@ -173,11 +260,15 @@ input[type=submit], button {
   border: none;
 }
 
+.video-cabecera {
+  position: relative;
+}
+
 .valoracion-casa i, .valoracion-anfitrion i {
   margin-right: 2px;
 }
 
-.footer a, footer .correo i, footer .telefono i, .top-bar .foto-usuario {
+.footer a, footer .correo i, footer .telefono i, .top-bar .foto-usuario, .crear-publicacion .foto-usuario img, .subir-imagen-video i, .publicacion .foto-usuario img, .opciones-comentario p {
   margin-right: 10px;
 }
 
@@ -185,22 +276,25 @@ input[type=submit], button {
   margin-right: 5px;
 }
 
-.formulario-contacto input[type=text], .formulario-contacto input[type=number], .formulario-contacto input[type=email], .formulario-registro input[type=text], .formulario-registro input[type=number], .formulario-registro input[type=email], .formulario-registro select, .formulario-acceso input[type=email], .formulario-acceso input[type=password] {
-	padding: 10px;
-	margin: 5px 0;
-  border-radius: 6px;
-	background-color: transparent;
+.formulario-contacto input[type=text], .formulario-contacto input[type=number], .formulario-contacto input[type=email], .formulario-contacto select, .formulario-contacto textarea, .formulario-registro input[type=text], .formulario-registro input[type=number], .formulario-registro input[type=email], .formulario-registro select, .formulario-registro textarea, .formulario-registro input[type=file], .formulario-acceso input[type=email], .formulario-acceso input[type=password] {
+  padding: 10px;
 }
 
-.formulario-contacto input[type=text], .formulario-contacto input[type=number], .formulario-contacto input[type=email], .formulario-registro input[type=text], .formulario-registro input[type=number], .formulario-registro input[type=email], .formulario-registro select, .subir-archivo, .formulario-acceso input[type=email], .formulario-acceso input[type=password] {
+.formulario-contacto input[type=text], .formulario-contacto input[type=number], .formulario-contacto input[type=email], .formulario-registro input[type=text], .formulario-registro input[type=number], .formulario-registro input[type=email], .formulario-contacto select, .formulario-contacto textarea, .formulario-registro select, .formulario-registro textarea, .formulario-registro input[type=file], .subir-documento, .formulario-acceso input[type=email], .formulario-acceso input[type=password] {
+  margin: 5px 0;
+  border-radius: 6px;
+  background-color: transparent;
+}
+
+.formulario-contacto input[type=text], .formulario-contacto input[type=number], .formulario-contacto input[type=email], .formulario-registro input[type=text], .formulario-registro input[type=number], .formulario-registro input[type=email], .formulario-contacto select, .formulario-contacto textarea, .formulario-registro select, .formulario-registro textarea, .formulario-registro input[type=file], .subir-archivo, .subir-documento, .formulario-acceso input[type=email], .formulario-acceso input[type=password], .buscador-contacto input[type=text], #datos-seguridad .subir-archivo {
   border: 1px solid #758592;
 }
 
-.formulario-contacto input[type=text], .formulario-contacto input[type=number], .formulario-contacto input[type=email], .chat input[type=text], .formulario-registro input[type=text], .formulario-registro input[type=number], .formulario-registro input[type=email], .formulario-registro select, .formulario-acceso input[type=email], .formulario-acceso input[type=password] {
+.formulario-contacto input[type=text], .formulario-contacto input[type=number], .formulario-contacto input[type=email], .formulario-contacto textarea, .chat input[type=text], .buscador-contacto input[type=text], .caja-texto input[type=text], .formulario-registro input[type=text], .formulario-registro input[type=number], .formulario-registro input[type=email], .formulario-contacto select, .formulario-registro select, .formulario-registro textarea, .formulario-registro input[type=file], .formulario-acceso input[type=email], .formulario-acceso input[type=password], .crear-publicacion textarea {
   width: 100%;
 }
 
-.formulario-registro button {
+.formulario-registro button, .celda-registro button {
   width: 30px;
   height: 30px;
   color: #758592;
@@ -209,16 +303,48 @@ input[type=submit], button {
   background-color: transparent;
 }
 
-.formulario-registro button, #area-usuario button, #experiencias button {
+.formulario-registro button, #area-usuario button, #experiencias button, .caja-texto button {
   background-color: transparent;
 }
 
-#galeria-casa button, #experiencias-deseadas button, #alojamientos button, #experiencias button {
+.formulario-registro textarea {
+  resize: none;
+}
+
+#menu-comunidad-responsive {
+  right: 0;
+  bottom: 0;
+  z-index: 9;
+  position: fixed;
+}
+
+#area-usuario .portada-alojamiento, #gestionar-casa .portada-alojamiento, #ventana-editar-casa .portada-alojamiento {
+  margin-top: 6px;
+  border-radius: 10px;
+}
+
+#ventana-editar-casa .portada-alojamiento {
+  position: relative;
+}
+
+#ventana-editar-casa .portada-alojamiento button {
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  border-color: #ce0e2d;
+  justify-content: center;
+  background-color: #ce0e2d;
+}
+
+#galeria-casa button, #experiencias-deseadas button, #alojamientos button, #experiencias button, .publicacion .likes-publicacion .foto-usuario img {
   width: 30px;
   height: 30px;
 }
 
-#ventana-galeria button {
+#ventana-galeria button, #boton-cerrar i {
   width: 40px;
   height: 40px;
 }
@@ -226,7 +352,7 @@ input[type=submit], button {
 #ventana-galeria button, #galeria-casa button, #experiencias-deseadas button, #alojamientos button, #experiencias button {
   margin: 0px 5px;
   border-radius: 50px;
-  background-color: rgba(255,255,255,0.9)
+  background-color: rgba(255,255,255,0.9);
 }
 
 .boton-desactivo:hover {
@@ -249,7 +375,7 @@ input[type=submit], button {
   background-color: rgba(0,0,0,0.5);
 }
 
-.celda-registro button:nth-child(1) {
+.celda-registro button:nth-child(1), #resultado-total-alojamientos {
   margin-right: 6px;
 }
 
@@ -263,29 +389,41 @@ input[type=submit], button {
 
 .chat input[type=text] {
   margin-right: 10px;
+  border: 1px solid #d8dfe1;
+}
+
+.chat input[type=text], .buscador-contacto input[type=text] {
   padding: 10px 20px;
   border-radius: 50px;
-  border: 1px solid #d8dfe1;
+}
+
+.chat-contactos > div {
+  margin-top: 0px;
+  margin-bottom: 20px;
 }
 
 .fecha-salida {
   margin-left: 6px;
 }
 
-input::placeholder, input[type=text], input[type=number], input[type=email], .buscador p, .desactivo, .caracteristica-casa, #nota-evaluacion {
+input::placeholder, input[type=text], input[type=number], input[type=email], .buscador p, .desactivo, .caracteristica-casa, #nota-evaluacion, .tiempo-contacto, .celda-registro label {
   font-weight: 300;
 }
 
-.formulario-contacto input::placeholder, .formulario-contacto input[type=text], .formulario-contacto input[type=number], .formulario-contacto input[type=email], .formulario-registro select, .celda-registro p, .buscador p, .desactivo, .caracteristica-casa, #nota-evaluacion, #testimonio, #fecha-huespede, .valoracion-anfitrion p, .leyenda-calendario p, .formulario-registro select, label, .dato-usuario p, .dato-casa p, .valoracion-casa p, .notificacion-leida p, #notificaciones button i, .mensaje-leido .ultimo-mensaje, .fecha-mensaje, .fecha-salida, .fecha-llegada {
+.formulario-contacto input::placeholder, input[type=text], input[type=number], input[type=email], textarea, .formulario-contacto select, .formulario-registro select, .celda-registro p, .buscador p, .desactivo, .caracteristica-casa, #nota-evaluacion, #testimonio, #fecha-huespede, .valoracion-anfitrion p, .leyenda-calendario p, .formulario-registro select, label, .dato-usuario p, .dato-casa p, .valoracion-casa p, .notificacion-leida p, #notificaciones button i, .mensaje-leido .ultimo-mensaje, .fecha-mensaje, .fecha-salida, .fecha-llegada, .promo-coins, .buscador-contacto input[type=text], .tiempo-contacto, .caja-texto input[type=text], .publicacion .vercomentarios-publicacion, .celda-registro label, .nombre-archivo, .coins-usuario {
   color: #758592;
 }
 
-.formulario-registro .celda-registro p {
+.formulario-registro .celda-registro p, .publicacion .caja-texto input[type=text] {
   margin: 0 10px;
 }
 
 .celda-registro {
   height: 55px;
+}
+
+.chat-contactos .datos-usuario {
+  margin: 0px;
 }
 
 .btn-verde, .btn-naranja {
@@ -297,7 +435,11 @@ input::placeholder, input[type=text], input[type=number], input[type=email], .bu
   margin-bottom: 10px !important;
 }
 
-input::placeholder, input[type=text], input[type=number], input[type=email], .formulario-registro select {
+.descripcion-promo {
+  margin-bottom: 5px;
+}
+
+input::placeholder, input[type=text], input[type=number], input[type=email], select, textarea {
   outline: none;
   background-color: transparent;
 }
@@ -306,7 +448,7 @@ footer p {
 	padding: 10px 0;
 }
 
-footer a, .valoracion-casa span, .valoracion-anfitrion span, h4, #menu-casa-responsive i, .frases-accesos a {
+footer a, .valoracion-casa span, .valoracion-anfitrion span, h4, #menu-casa-responsive i, .frases-accesos a, .btn-editar i, #contacto a, .precio, .publicacion .descripcion-publicacion a, .publicacion .comentario a {
 	color: #f5b335;
 }
 
@@ -315,22 +457,19 @@ footer a, .valoracion-casa span, .valoracion-anfitrion span, h4, #menu-casa-resp
 }
 
 li:hover ul.submenu {
-	top: 70px;
 	opacity: 1;
-	right: 540px;
 	width: 90px;
-  padding: 10px 5px;
 	visibility: visible;
 }
 
 .sticky li:hover ul.submenu  {
-  right: 570px;
+  right: 600px;
 }
 
 .menu-usuario {
-  top: 90px;
+  top: 70px;
   opacity: 1;
-  right: 230px;
+  right: 0px;
   width: 200px;
   padding: 10px 5px;
 }
@@ -361,13 +500,18 @@ li:hover ul.submenu {
 }
 
 #calendario-buscador {
-  width: 70%;
+  width: 50%;
   top: 200px;
   position: absolute;
 }
 
-#que-es h2, #alojamientos h2, #experiencias h1, h3, .submenu li a, .ventana-cookies p, #mensaje-exito p, #mensaje-error p, .nombre-casa, .menu-usuario a, .modal-calendar h2, .frase-destacado, .frase-calendario, .redes-sociales i, #menu-usuario a, #menu-usuario p, #resultado-total-alojamientos, #resultado-fecha-llegada, #resultado-fecha-salida, #resultado-experiencia, #resultado-lugar, #resultado-total-alojamientos, #resultado-fecha-llegada, #resultado-fecha-salida, #resultado-experiencia, #resultado-lugar, #ficha-casa h1, #ficha-casa h2, #nombre-huespede, #anfitrion .nombre-anfitrion, .modal-casa h2, #ventana-disponibilidad h2, #datos-registro-bienvenido h2, .area-usuario-menu a, #area-usuario h2, .notificacion-noleida .nombre-notificacion, .nombre-emisor, .area-usuario-menu .datos-usuario p, #iniciar-sesion h1 {
+#que-es h2, #alojamientos h2, #experiencias h1, h3, .submenu li a, .ventana-cookies p, #mensaje-exito p, #mensaje-error p, .nombre-casa, .menu-usuario a, .modal-calendar h2, .frase-destacado, .frase-calendario, .redes-sociales i, #menu-usuario a, #menu-usuario p, #resultado-total-alojamientos, #resultado-fecha-llegada, #resultado-fecha-salida, #resultado-experiencia, #resultado-lugar, #resultado-total-alojamientos, #resultado-fecha-llegada, #resultado-fecha-salida, #resultado-experiencia, #resultado-lugar, #ficha-casa h1, #ficha-casa h2, #nombre-huespede, #anfitrion .nombre-anfitrion, .modal-casa h2, #ventana-editar-fechas h2, #ventana-disponibilidad h2, #datos-registro-bienvenido h2, .area-usuario-menu a, #area-usuario h2, .notificacion-noleida .nombre-notificacion, .nombre-emisor, .area-usuario-menu .datos-usuario p, #iniciar-sesion h1, .frase-servicio, #nomadcoins h1, #promos h1, #comunidad h1, #contacto h1, .nomad-promo h2, .chat-contactos .datos-usuario p, .publicacion .nombre-usuario, .publicacion .descripcion-publicacion span, .publicacion .likes-publicacion span {
 	color: #243746;
+}
+
+#area-usuario .titulo-registro {
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .titulo-registro {
@@ -380,7 +524,7 @@ li:hover ul.submenu {
   line-height: 3;
 }
 
-footer a:hover {
+#contacto a, footer a:hover {
 	cursor: pointer;
 	text-decoration: underline;
 }
@@ -389,25 +533,30 @@ footer a:hover {
   overflow: scroll;
 }*/
 
-#registrate .btn-verde {
+#contacto .btn-verde {
 	padding: 17px 30px 13px 30px;
 }
 
-#inicio {
+.espacio-alto {
   padding-top: 150px;
 } 
 
-#inicio:after {
+/*#inicio:after {
 	top: 0;
 	right: 0;
 	content: '';
 	width: 100%;
-	height: 100vh;
+  overflow: hidden;
 	position: absolute;
 	background-color: rgba(0,0,0,0.5);
+}*/
+
+#inicio video {
+  width: 100%;
+  height: 100%;
 }
 
-#inicio h1, .frase-registro {
+#inicio h1, .frase-registro, .promociones .frase-promo {
   margin-top: 50px;
 }
 
@@ -419,7 +568,7 @@ footer a:hover {
 	padding: 80px 0;
 }
 
-#experiencias, #registro, #ficha-casa, #area-usuario, #iniciar-sesion {
+#experiencias, #registro, #ficha-casa, #area-usuario, #iniciar-sesion, #nomadcoins, #promos, #comunidad, #gestionar-casa, #contacto {
   padding: 150px 0 80px;
 }
 
@@ -427,27 +576,23 @@ footer a:hover {
   padding: 0 0 80px;
 }
 
-#que-es .linea, #alojamientos .linea, #datos-registro-bienvenido .linea, #iniciar-sesion .linea {
+#que-es .linea, #alojamientos .linea, #datos-registro-bienvenido .linea, #iniciar-sesion .linea, #nomadcoins .linea, #promos .linea, #comunidad .linea, #contacto .linea {
   margin: auto;
-}
-
-#contacto {
-	padding: 80px 0px 100px;
 }
 
 #acceso-responsive {
   margin: 0 10px;
 }
 
-#inicio, #que-es, #alojamientos h2, #mensaje-exito, #mensaje-error, .modal-calendar table, .fechas-disponibles table, .modal-calendar h2, #que-es .frase-destacado, #alojamiento .frase-destacado, #iniciar-sesion {
+#inicio, #que-es, #alojamientos h2, #mensaje-exito, #mensaje-error, .modal-calendar table, .fechas-disponibles table, .modal-calendar h2, #que-es .frase-destacado, #alojamiento .frase-destacado, #iniciar-sesion, #nomadcoins, #promos h1, #promos .frase-destacado, #comunidad h1, #comunidad .frase-destacado, #contacto h1, #contacto .frase-destacado, .frase-promo, .area-usuario-menu .datos-usuario, #sidebar-casa .btn-verde, #sidebar-casa .btn-naranja, #sidebar-casa .btn-rojo, .coins-usuario {
 	text-align: center;
 }
 
-#ventana-buscador input[type=text] {
+#ventana-buscador input[type=text], .publicacion .nombre-usuario {
   display: block;
 }
 
-#ventana-buscador input[type=text], #que-es h2, #alojamientos h2, .imagen-alojamiento, #boton-cerrar {
+#ventana-buscador input[type=text], #que-es h2, #alojamientos h2, .imagen-alojamiento, #boton-cerrar, .publicacion .descripcion-publicacion {
 	margin-bottom: 10px;
 }
 
@@ -463,15 +608,11 @@ footer a:hover {
 	margin-bottom: 60px;
 }
 
-#experiencias .linea, #experiencias .frase-destacado, #datos-perfil .linea, #datos-perfil .frase-destacado, #inbox .linea, #inbox .frase-destacado, #notificaciones .linea, #notificaciones .frase-destacado, #mensajes .linea, #mensajes .frase-destacado, #mis-experiencias .linea, #mis-experiencias .frase-destacado, #favoritos .linea, #favoritos .frase-destacado, #gestionar-casa .linea, #gestionar-casa .frase-destacado, #experiencias-deseadas .linea, #experiencias-deseadas .frase-destacado, #iniciar-sesion .linea, #iniciar-sesion .frase-destacado {
+#experiencias .linea, #experiencias .frase-destacado, #datos-perfil .linea, #datos-perfil .frase-destacado, #inbox .linea, #inbox .frase-destacado, #notificaciones .linea, #notificaciones .frase-destacado, #mensajes .linea, #mensajes .frase-destacado, #mis-experiencias .linea, #mis-experiencias .frase-destacado, #favoritos .linea, #favoritos .frase-destacado, #ventana-editar-casa .linea, #ventana-editar-fechas .linea, #experiencias-deseadas .linea, #experiencias-deseadas .frase-destacado, #iniciar-sesion .linea, #iniciar-sesion .frase-destacado, #nomadcoins .linea, #nomadcoins .frase-destacado, #promos .linea, #promos .frase-destacado, #comunidad .linea, #comunidad .frase-destacado, #contacto .linea, #contacto .frase-destacado, .frase-promo {
   margin-bottom: 40px;
 }
 
-#contacto .linea {
-	margin-bottom: 70px;
-}
-
-footer p, .registro p, .acceso p, .ventana-cookies p, #alojamientos h3, .lugar-casa, .resultado-nombre-casa .experiencia-casa, .valoracion-casa span, .valoracion-casa p, #inicio p, #btn-intercambio p, #btn-peticiones p, #btn-nodisponible p, .modal-calendar h2, #buscador-modal p, .datos-usuario p, .resultado-nombre-casa h3, .caracteristica-casa, .resultado-busqueda p, .valoraciones p, #nombre-huespede, .servicios-alojamiento p, #anfitrion p, .leyenda-calendario p, #datos-casa h1, .nombre-anfitrion, .fecha-respuesta, .chat-escribiendo, .chat-usuario p, .chat-anfitrion p, #menu-casa-responsive p, .celda-registro p, #datos-perfil p, #gestionar-casa p, #notificaciones p, #inbox p, #mensajes p, .alojamiento-buscador h3, .alojamiento-reciente h3, .numero-imagenes p, .frase-calendario, .frases-accesos p {
+footer p, .registro p, .acceso p, .ventana-cookies p, #alojamientos h3, .lugar-casa, .resultado-nombre-casa .experiencia-casa, .valoracion-casa span, .valoracion-casa p, #inicio p, #btn-intercambio p, #btn-peticiones p, #btn-nodisponible p, .modal-calendar h2, #buscador-modal p, .datos-usuario p, .resultado-nombre-casa h3, .caracteristica-casa, .resultado-busqueda p, .valoraciones p, #nombre-huespede, .servicios-alojamiento p, #anfitrion p, .leyenda-calendario p, #datos-casa h1, .nombre-anfitrion, .fecha-respuesta, .chat-escribiendo, .chat-usuario p, .chat-anfitrion p, #menu-casa-responsive p, .celda-registro p, #datos-perfil p, #gestionar-casa p, #notificaciones p, #inbox p, #mensajes p, .alojamiento-buscador h3, .alojamiento-reciente h3, .numero-imagenes p, .frase-calendario, .frases-accesos p, .nomad-promo h2, .precio, .promo-coins, .subir-imagen-video p, .tiempo-contacto, .likes-publicacion p, .publicacion .comentarios-publicacion p, #area-usuario .portada-alojamiento, #gestionar-casa .portada-alojamiento, #datos-disponibilidad .dato-casa:last-child, #promos h1 {
 	margin-bottom: 0px;
 }
 
@@ -483,15 +624,11 @@ footer p, .registro p, .acceso p, .ventana-cookies p, #alojamientos h3, .lugar-c
   margin-right: 30px;
 }
 
-#registrate {
-	background-color: #f9f9f9;
-}
-
-#contacto, footer, .calendario-mes, .top-bar, .bottom-bar {
+footer, .calendario-mes, .top-bar, .bottom-bar, .notificacion-coins {
 	background-color: #243746;
 }
 
-#contacto h2, .experiencia-casa, .correo i, .telefono i, footer a:hover, .resultado-nombre-casa i, .nombre-anfitrion span, .top-bar .nombre-anfitrion, .subir-archivo p {
+.experiencia-casa, .correo i, .telefono i, footer a:hover, .resultado-nombre-casa i, .nombre-anfitrion span, .top-bar .nombre-anfitrion, .subir-archivo p, .crear-publicacion i, .caja-texto button i, .subir-imagen i {
 	color: #3bd4ae;
 }
 
@@ -500,12 +637,9 @@ footer p, .registro p, .acceso p, .ventana-cookies p, #alojamientos h3, .lugar-c
   height: 500px;
 }
 
-#mensaje-exito, #mensaje-error, #ventana-buscador, #ventana-valoraciones, #ventana-servicios, #ventana-disponibilidad, #ventana-galeria {
+#mensaje-exito, #mensaje-error, #ventana-buscador, #ventana-valoraciones, #ventana-servicios, #ventana-disponibilidad, #ventana-galeria, #ventana-editar-perfil, #ventana-editar-casa, #ventana-editar-fechas, #ventana-publicar, #ventana-contactos {
   width: 100%;
   height: 100%;
-}
-
-#mensaje-exito, #mensaje-error, #ventana-buscador, #ventana-valoraciones, #ventana-servicios, #ventana-disponibilidad, #ventana-galeria {
 	top: 0;
 	z-index: 9;
 	position: fixed;
@@ -524,7 +658,7 @@ footer p, .registro p, .acceso p, .ventana-cookies p, #alojamientos h3, .lugar-c
   margin-top: 4px;
 }
 
-#ventana-buscador label, .leyenda-calendario {
+#ventana-buscador label, .leyenda-calendario, .subir-imagen-video {
   margin-top: 20px;
 }
 
@@ -532,7 +666,7 @@ footer p, .registro p, .acceso p, .ventana-cookies p, #alojamientos h3, .lugar-c
   border: 2px solid #3bd4ae;
 }
 
-#btn-intercambio:hover, .chat-usuario {
+#btn-intercambio:hover, .chat-usuario, .contacto-conectado {
   background-color: #3bd4ae;
 }
 
@@ -556,12 +690,16 @@ footer p, .registro p, .acceso p, .ventana-cookies p, #alojamientos h3, .lugar-c
   border: 2px solid #ce0e2d;
 }
 
-#btn-nodisponible:hover, .notificacion, .text-nodisponible {
+#btn-nodisponible:hover, .notificacion, .text-nodisponible, #quitar-favoritos, .btn-rojo {
   background-color: #ce0e2d;
 }
 
-#btn-nodisponible p {
+#btn-nodisponible p, #publicacion-like i {
   color: #ce0e2d;
+}
+
+.btn-rojo:hover {
+  background-color: #9b0b22;
 }
 
 #btn-intercambio, #btn-peticiones, #btn-nodisponible {
@@ -571,7 +709,7 @@ footer p, .registro p, .acceso p, .ventana-cookies p, #alojamientos h3, .lugar-c
   border-radius: 6px;
 }
 
-#buscador-sticky, #buscador-responsive, #mensajes .foto-usuario img, #inbox .foto-usuario img {
+#buscador-sticky, #buscador-responsive, #mensajes .foto-usuario img, #inbox .foto-usuario img, .crear-publicacion .foto-usuario img, .chat-contactos .foto-usuario img, .publicacion .foto-usuario img {
   border-radius: 50px;
 }
 
@@ -584,25 +722,21 @@ footer p, .registro p, .acceso p, .ventana-cookies p, #alojamientos h3, .lugar-c
   height: 40px;
 }
 
-#buscador-sticky, #buscador-responsive, .redes-sociales li a, #menu-usuario li a, #menu-usuario li, .notificacion, .area-usuario-menu li a, .area-usuario-menu li {
+#buscador-sticky, #buscador-responsive, .redes-sociales li a, #menu-usuario li a, #menu-usuario li, .notificacion, .area-usuario-menu li a, .area-usuario-menu li, .menu-usuario li a, .menu-usuario li, #boton-cerrar i {
   display: flex;
   align-items: center;
 }
 
-#buscador-sticky, #buscador-responsive, .redes-sociales li a, .notificacion {
+#buscador-sticky, #buscador-responsive, .redes-sociales li a, .notificacion, #boton-cerrar i {
   justify-content: center;
 }
 
 #buscador-modal {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
-#menu-usuario li, .mis-experiencias, .resultado-nombre-casa, .area-usuario-menu li {
+#menu-usuario li, .mis-experiencias, .resultado-nombre-casa, .area-usuario-menu li, .menu-usuario li {
   justify-content: space-between;
-}
-
-#resultado-total-alojamientos {
-  margin-right: 6px;
 }
 
 #resultado-fecha-llegada, #resultado-fecha-salida, #resultado-experiencia, #resultado-lugar {
@@ -638,41 +772,55 @@ footer p, .registro p, .acceso p, .ventana-cookies p, #alojamientos h3, .lugar-c
   margin-top: 30px;
 }
 
+#ventana-publicar .modal-casa, #ventana-contactos .modal-casa, #ventana-editar-fechas .modal-contenido-fechas {
+  height: auto;
+}
+
 #sidebar-casa {
   padding: 0 50px;
 }
 
-#sidebar-casa .btn-verde, #sidebar-casa .btn-naranja {
+#sidebar-casa .btn-verde, #sidebar-casa .btn-naranja, #sidebar-casa .btn-rojo {
   display: block;
   margin: 10px 0;
-  text-align: center;
   padding: 15px 22px 10px 22px;
-}
-
-#sidebar-casa h2 {
-  font-size: 24px;
-}
-
-#ventana-disponibilidad .calendario-mes {
-  margin-top: 0px;
 }
 
 #ventana-disponibilidad .modal-contenido {
   padding: 30px 30px 0;
 }
 
-.notificacion {  
+.subir-archivo .nombre-archivo {
+  padding: 50px;
+  text-transform: lowercase;
+}
+
+.notificacion, .notificacion-coins {  
   width: auto;
   padding: 6px;
   height: 20px;
   border-radius: 10px;
 }
 
+.notificacion-coins {
+  line-height: 0.7;
+}
+
+.contacto-conectado {
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+}
+
 .acceso .notificacion {
   margin: -3px;
 }
 
-.acceso .notificacion, #registro-responsive .notificacion {
+.acceso .notificacion, .acceso .notificacion-coins {
+  margin-left: 5px;
+}
+
+.acceso .foto-usuario .notificacion, #registro-responsive .notificacion, .info-usuario {
   position: absolute;
 }
 
@@ -681,13 +829,13 @@ footer p, .registro p, .acceso p, .ventana-cookies p, #alojamientos h3, .lugar-c
   justify-content: flex-end;
 }
 
-#menu-usuario .notificacion, .area-usuario-menu .notificacion {
+#menu-usuario .notificacion, #menu-usuario .notificacion-coins, .area-usuario-menu .notificacion, .area-usuario-menu .notificacion-coins {
   height: 20px;
   margin-left: 6px;
 }
 
-.area-usuario-menu .datos-usuario {
-  text-align: center;
+.calendario-sticky {
+  left: 100%;
 }
 
 .area-usuario-menu .datos-usuario .foto-usuario {
@@ -725,11 +873,7 @@ footer p, .registro p, .acceso p, .ventana-cookies p, #alojamientos h3, .lugar-c
   border-radius: 0px 0px 15px 15px;
 }
 
-.modal-calendar table td {
-  height: 50px;
-}
-
-#datos-registro-disponibilidad table td {
+.modal-calendar table td, #datos-registro-disponibilidad table td, #datos-disponibilidad table td {
   height: 50px;
 }
 
@@ -737,7 +881,7 @@ footer p, .registro p, .acceso p, .ventana-cookies p, #alojamientos h3, .lugar-c
   height: 35px;
 }
 
-.modal-calendar table td, .fechas-disponibles table td {
+.modal-calendar table td, .fechas-disponibles table td, #promos img {
   width: 50px;
 }
 
@@ -755,8 +899,27 @@ footer p, .registro p, .acceso p, .ventana-cookies p, #alojamientos h3, .lugar-c
   border-radius: 50px;
 }
 
-.redes-sociales a {
+.redes-sociales a, .chat-contactos .foto-usuario img, .publicacion .likes-publicacion i {
   margin-right: 10px;
+}
+
+.opciones-publicacion i {
+  margin-right: 15px;
+}
+
+.likes-publicacion > div .foto-usuario:nth-child(2) {
+  top: 0;
+  left: 20px;
+  position: absolute;
+}
+
+.publicacion .likes-publicacion img {
+  border: 2px solid #fff;
+}
+
+.publicacion .caja-texto img {
+  width: 24px;
+  height: 24px;
 }
 
 .derecho {
@@ -770,6 +933,7 @@ footer p, .registro p, .acceso p, .ventana-cookies p, #alojamientos h3, .lugar-c
 .chat [type=submit] {
   width: 56px;
   height: 50px;
+  padding: 12px;
   border-radius: 50px;
 }
 
@@ -812,7 +976,7 @@ footer p, .registro p, .acceso p, .ventana-cookies p, #alojamientos h3, .lugar-c
   padding-left: 5px;
 }
 
-.registro, .acceso, .sticky, .buscador, .menu-usuario {
+.registro, .acceso, .sticky, .buscador, .menu-usuario, .info-usuario {
   background-color: #fff;
 }
 
@@ -832,6 +996,13 @@ footer p, .registro p, .acceso p, .ventana-cookies p, #alojamientos h3, .lugar-c
 .modal-casa {
   width: 70%;
   height: 80%;
+}
+
+.modal-contenido-fechas {
+  width: 50%;
+}
+
+.modal-casa, .modal-contenido-fechas {
   overflow: scroll;
 }
 
@@ -847,13 +1018,33 @@ footer p, .registro p, .acceso p, .ventana-cookies p, #alojamientos h3, .lugar-c
   overflow: hidden;
 }
 
-.testimonio .foto-usuario img, .chat-contenido .foto-usuario img, #mensajes .foto-usuario img, #inbox img, #notificaciones img {
+.testimonio .foto-usuario img, .chat-contenido .foto-usuario img, #mensajes .foto-usuario img, #inbox img, #notificaciones img, .crear-publicacion .foto-usuario img, .chat-contactos .foto-usuario img {
   width: 80px;
   height: 80px;
 }
 
-.testimonio .foto-usuario, .leyenda-calendario, .modal-casa .linea, #datos-casa .linea, .alojamiento {
+.testimonio .foto-usuario, .leyenda-calendario, .modal-casa .linea, #datos-casa .linea, .alojamiento, .opciones-publicacion, .likes-publicacion {
   margin-bottom: 20px;
+}
+
+.publicacion .datos-usuario .foto-usuario img, #btn-contactos, #btn-publicar {
+  width: 60px;
+  height: 60px;
+}
+
+.publicacion .caja-texto .foto-usuario img, .publicacion .comentarios-publicacion .foto-usuario img {
+  width: 50px;
+  height: 50px;
+}
+
+#btn-contactos, #btn-publicar {
+  margin: 10px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 20px rgb(80 80 80 / 10%);
+}
+
+.publicacion .respuesta-comentario {
+  margin-left: 60px;
 }
 
 .frase-servicio {
@@ -873,12 +1064,16 @@ footer p, .registro p, .acceso p, .ventana-cookies p, #alojamientos h3, .lugar-c
   margin-bottom: 10px;
 }
 
-.acceso .foto-usuario, #registro-responsive, .testimonio .foto-usuario, #anfitrion .foto-usuario, .top-bar .foto-usuario, .chat-contenido .foto-usuario img {
+.acceso .foto-usuario, #registro-responsive, .testimonio .foto-usuario, #anfitrion .foto-usuario, .top-bar .foto-usuario, .chat-contenido .foto-usuario img, #boton-cerrar i {
   border-radius: 50%;
 }
 
 .acceso .foto-usuario {
   margin-left: 10px;
+}
+
+.publicacion .likes-publicacion p {
+  margin-left: 20px;
 }
 
 .chat-usuario, .chat-anfitrion {
@@ -942,7 +1137,7 @@ footer p, .registro p, .acceso p, .ventana-cookies p, #alojamientos h3, .lugar-c
   margin-bottom: 40px;
 }
 
-.valoraciones p, .chat-escribiendo, #datos-registro-disponibilidad .frase-destacado {
+.valoraciones p, .chat-escribiendo, #datos-registro-disponibilidad .frase-destacado, .subir-archivo p, .formulario-contacto input[type=checkbox] {
   margin-top: 10px;
 }
 
@@ -968,22 +1163,40 @@ footer p, .registro p, .acceso p, .ventana-cookies p, #alojamientos h3, .lugar-c
   right: 10%;
 }
 
-#registro-responsive, .top-bar .foto-usuario {
-  border: 3px solid #fff;
-}
-
 #registro-responsive .notificaciones {
   margin-top: -10px;
 }
 
-#menu-usuario .foto-usuario {
+#menu-usuario .foto-usuario img {
   width: 100px;
   height: 100px;
+}
+
+.publicacion .info-usuario .foto-usuario img {
+  width: 120px;
+  height: 120px;
+}
+
+#menu-usuario .foto-usuario img, .publicacion .info-usuario .foto-usuario img {
   border-radius: 50%;
   margin-right: 20px;
 }
 
-.area-usuario-menu .foto-usuario img {
+.info-usuario {
+  top: 50px;
+  opacity: 0;
+}
+
+.info-usuario .btn-verde {
+  margin: 5px 0 0;
+}
+
+.publicacion .datos-usuario:hover .info-usuario {
+  opacity: 1;
+  transition: all .2s ease-out;
+}
+
+.area-usuario-menu .foto-usuario img, .cambiar-imagen-perfil img, .cambiar-imagen-perfil:before {
   width: 140px;
   height: 140px;
   border-radius: 50%;
@@ -1012,15 +1225,15 @@ footer p, .registro p, .acceso p, .ventana-cookies p, #alojamientos h3, .lugar-c
   border-radius: 50px;
 }
 
-.buscador label, .dias ul li, .modal-calendar .dias td, .fechas-disponibles .dias td, #menu-usuario .notificacion, #nota-evaluacion, #menu-casa-responsive p, .area-usuario-menu .notificacion, .resultado-busqueda p, .alojamiento-buscador .caracteristica-casa, .alojamiento-buscador .experiencia-casa {
+.buscador label, .dias ul li, .modal-calendar .dias td, .fechas-disponibles .dias td, #menu-usuario .notificacion, #menu-usuario .notificacion-coins, #nota-evaluacion, #menu-casa-responsive p, .area-usuario-menu .notificacion, .area-usuario-menu .notificacion-coins, .resultado-busqueda p, .alojamiento-buscador .caracteristica-casa, .alojamiento-buscador .experiencia-casa, .descripcion-promo, #ventana-editar-casa .portada-alojamiento button i {
   font-size: 14px;
 }
 
-.modal-calendar .calendario-dia td, .fechas-disponibles .calendario-dia td, .experiencia-casa, .valoracion-casa, .formulario-registro button, #datos-registro-disponibilidad .fechas-disponibles .dias td {
+.modal-calendar .calendario-dia td, .fechas-disponibles .calendario-dia td, .experiencia-casa, .valoracion-casa, .formulario-registro button, #datos-registro-disponibilidad .fechas-disponibles .dias td, .publicacion .datos-usuario .tiempo-contacto {
   font-size: 16px;
 }
 
-.buscador input[type=text], .buscador input[type=number], .buscador input[type=email] {
+.buscador input[type=text], .buscador input[type=number], .buscador input[type=email], .crear-publicacion textarea, .caja-texto input[type=text] {
   border: none;
 }
 
@@ -1040,11 +1253,11 @@ footer p, .registro p, .acceso p, .ventana-cookies p, #alojamientos h3, .lugar-c
   display: block !important;
 }
 
-.sticky .logo-color, .sticky .acceso-color, .buscador input[type=text] {
+.sticky .logo-color, .sticky .acceso-color, .buscador input[type=text], .formulario-registro textarea {
 	display: block;
 }
 
-.sticky #buscador-sticky, .menu-responsive #buscador-responsive {
+.sticky #buscador-sticky, .menu-responsive #buscador-responsive, .info-usuario {
   display: flex;
 }
 
@@ -1056,7 +1269,7 @@ footer p, .registro p, .acceso p, .ventana-cookies p, #alojamientos h3, .lugar-c
   display: none !important;
 }
 
-.sticky .logo-blanco, .sticky .acceso-blanco, .acceso-color, .logo-color, #buscador-sticky, #buscador-modal, #buscador-responsive, #buscador-sticky, #timeline .tercer-timeline #paso-cuatro, #galeria-casa button {
+.sticky .logo-blanco, .sticky .acceso-blanco, .acceso-color, .logo-color, #buscador-sticky, #buscador-responsive, #buscador-sticky, #timeline .tercer-timeline #paso-cuatro, #timeline-casa .segundo-timeline #paso-tres, #galeria-casa button {
 	display: none;
 }
 
@@ -1069,7 +1282,7 @@ footer p, .registro p, .acceso p, .ventana-cookies p, #alojamientos h3, .lugar-c
   border-bottom: 3px solid #f5b335;
 }
 
-.btn-verde, .evaluacion:after, .text-intercambio {
+.btn-verde, .evaluacion:after, .text-intercambio, #btn-publicar, #boton-cerrar i {
 	background-color: #3bd4ae;
 }
 
@@ -1077,7 +1290,7 @@ footer p, .registro p, .acceso p, .ventana-cookies p, #alojamientos h3, .lugar-c
 	background-color: #00c08b;
 }
 
-.btn-naranja, .linea, .btn-buscador, #buscador-sticky, #buscador-responsive {
+.btn-naranja, .linea, .btn-buscador, #buscador-sticky, #buscador-responsive, #btn-contactos {
 	background-color: #f5b335;
 }
 
@@ -1091,19 +1304,19 @@ footer p, .registro p, .acceso p, .ventana-cookies p, #alojamientos h3, .lugar-c
   margin-bottom: 4px;
 }
 
-.btn-verde, .btn-naranja {
+.btn-verde, .btn-naranja, .btn-rojo {
   padding: 17px 27px 12px 27px;
 }
 
-.btn-verde, .btn-naranja, .btn-buscador {
+.btn-verde, .btn-naranja, .btn-rojo, .btn-buscador {
   border-radius: 30px;
 }
 
-.btn-verde, .btn-naranja, .btn-buscador, .experiencia-casa {
+.btn-verde, .btn-naranja, .btn-rojo, .btn-buscador, .experiencia-casa {
 	font-weight: 500;
 }
 
-.btn-verde, .btn-naranja, .btn-buscador, .btn-buscador:hover, .btn-verde:hover, .btn-naranja:hover, .btn-azul-izquierda:hover, .btn-azul-derecha:hover, .btn-azul-izquierda, .btn-azul-derecha, .footer li a, #menu-usuario a, .area-usuario-menu a, .submenu-area-usuario a {
+.btn-verde, .btn-naranja, .btn-rojo, .btn-buscador, .btn-buscador:hover, .btn-verde:hover, .btn-naranja:hover, .btn-azul-izquierda:hover, .btn-azul-derecha:hover, .btn-azul-izquierda, .btn-azul-derecha, .footer li a, #menu-usuario a, .area-usuario-menu a, .submenu-area-usuario a {
 	text-decoration: none;
 	transition: all .2s ease-out;
 }
@@ -1148,7 +1361,7 @@ footer p, .registro p, .acceso p, .ventana-cookies p, #alojamientos h3, .lugar-c
   padding: 0;
 }
 
-.header li a {
+.header li a, .publicacion .descripcion-publicacion a {
   /*display: block;*/
   text-decoration: none;
 }
@@ -1248,12 +1461,28 @@ footer p, .registro p, .acceso p, .ventana-cookies p, #alojamientos h3, .lugar-c
   padding: 0 10px 10px;
 }
 
+.submenu-usuario {
+  padding-left: 10px;
+}
+
+.menu-usuario a {
+  width: 100%;
+}
+
+.menu-usuario .fal {
+  right: 0;
+  position: absolute;
+}
+
 .mensaje-noleido > div, .mensaje-leido > div {
   padding: 20px 0;
 }
 
 .submenu {
+  right: 0;
+  top: 40px;
 	opacity: 0;
+  padding: 10px 5px !important;
   visibility: hidden;
 }
 
@@ -1275,18 +1504,21 @@ footer p, .registro p, .acceso p, .ventana-cookies p, #alojamientos h3, .lugar-c
 }
 
 .portada-alojamiento {
+  margin-bottom: 16px;
+}
+
+.portada-alojamiento, .imagen-publicacion {
   display: flex;
   overflow: hidden;
-  margin-bottom: 16px;
   border-radius: 20px;
   justify-content: flex-end;
 }
 
-.portada-alojamiento img {
+.portada-alojamiento img, .imagen-publicacion img, .imagen-alojamiento img, .opciones-calendario {
   width: 100%;
 }
 
-.imagen-alojamiento {
+/*.imagen-alojamiento {
   height: 180px;
   overflow: hidden;
   border-radius: 12px;
@@ -1294,11 +1526,7 @@ footer p, .registro p, .acceso p, .ventana-cookies p, #alojamientos h3, .lugar-c
   background-position: center;
   background-repeat: no-repeat;
   background-image: url(../img/casa-moonlight.jpg);
-}
-
-.imagen-alojamiento img, .opciones-calendario {
-  width: 100%;
-}
+}*/
 
 .nombre-casa, .opciones-calendario {
   margin-top: 20px;
@@ -1323,24 +1551,16 @@ footer p, .registro p, .acceso p, .ventana-cookies p, #alojamientos h3, .lugar-c
   padding: 60px 0 40px;
 }
 
-.footer h4, .menu-responsive i, , #nombre-huespede, #descripcion-casa p, #descripcion-zona p, #servicios-alojamiento p, #normas-alojamiento p, .valoracion-anfitrion span, .valoracion-anfitrion p, #datos-casa .caracteristica-casa, .chat input[type=text], .chat [type=submit], .area-usuario-menu a, .titulo-dato, .nombre-notificacion, #notificaciones button i, .ultimo-mensaje, .alojamiento-buscador .lugar-casa, .alojamiento-reciente .lugar-casa, #fecha-registro {
+.footer h4, .menu-responsive i, , #nombre-huespede, #descripcion-casa p, #descripcion-zona p, #servicios-alojamiento p, #normas-alojamiento p, .valoracion-anfitrion span, .valoracion-anfitrion p, #datos-casa .caracteristica-casa, .chat input[type=text], .chat [type=submit], .buscador-contacto input[type=text], .caja-texto input[type=text], .area-usuario-menu a, .titulo-dato, .formulario-registro label, .nombre-notificacion, #notificaciones button i, .ultimo-mensaje, .alojamiento-buscador .lugar-casa, .alojamiento-reciente .lugar-casa, #fecha-registro, .promo-coins, #boton-cerrar {
   font-size: 18px;
 }
 
-.redes-sociales i, .submenu-area-usuario a {
-  font-size: 20px;
-}
-
-.frase-calendario, #datos-casa .lugar-casa {
-  font-size: 20px;
+.publicacion .descripcion-publicacion, .publicacion .nombre-usuario {
+  font-size: 18px !important;
 }
 
 .frase-calendario {
   letter-spacing: -0.5px;
-}
-
-.calendario-mes {
-  font-size: 20px;
 }
 
 .footer img {
@@ -1360,7 +1580,7 @@ footer p, .registro p, .acceso p, .ventana-cookies p, #alojamientos h3, .lugar-c
   border-top: 1px solid #fff;
 }
 
-.pie-footer, .acceso .notificacion, .chat-escribiendo, .editar-dato {
+.pie-footer, .acceso .notificacion, .notificacion-coins, .chat-escribiendo, .editar-dato, .opciones-comentario {
   font-size: 12px;
 }
 
@@ -1446,25 +1666,48 @@ footer p, .registro p, .acceso p, .ventana-cookies p, #alojamientos h3, .lugar-c
   margin: 10px 0;
 }
 
+.cambiar-imagen-perfil {
+  margin: 10px 10px 20px;
+}
+
+.cambiar-imagen-perfil i, .cambiar-imagen-perfil:before {
+  position: absolute;
+}
+
+.cambiar-imagen-perfil:before {
+  content: '';
+  background-color: rgba(0,0,0,0.5);
+}
+
 .subir-archivo {
   padding: 50px;
-  cursor: pointer;
   margin-top: 30px;
+}
+
+.subir-imagen {
+  height: 82%;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  margin-top: 7px;
+}
+
+.subir-archivo, .subir-imagen {
+  border-radius: 12px;
+  border: 2px solid #3bd4ae;
+}
+
+.subir-archivo, .cambiar-imagen-perfil, .subir-imagen-video, .subir-imagen {
+  cursor: pointer;
   text-align: center;
   align-self: center;
   position: relative;
-  border-radius: 12px;
 }
 
 .subir-archivo img {
   height: 50px;
 }
 
-.subir-archivo p {
-  margin-top: 10px;
-}
-
-.subir-archivo input {
+.subir-archivo input, .subir-documento input, .cambiar-imagen-perfil input, .subir-imagen-video input, .subir-imagen input {
   top: 0;
   right: 0;
   opacity: 0;
@@ -1489,7 +1732,7 @@ footer p, .registro p, .acceso p, .ventana-cookies p, #alojamientos h3, .lugar-c
   right: 50px;
 }
 
-#timeline {
+#timeline, #timeline-casa {
   margin: 50px 0 80px;
   background-color: #f5b335;
   height: 1px;
@@ -1497,7 +1740,7 @@ footer p, .registro p, .acceso p, .ventana-cookies p, #alojamientos h3, .lugar-c
   position: relative;
 }
 
-#timeline .dot {
+#timeline .dot, #timeline-casa .dot {
   transition: 0.3s ease-in-out;
   width: 40px;
   height: 40px;
@@ -1508,7 +1751,7 @@ footer p, .registro p, .acceso p, .ventana-cookies p, #alojamientos h3, .lugar-c
   cursor: pointer;
 }
 
-#timeline p {
+#timeline p, #timeline-casa p {
   top: -50px;
   color: #f5b335;
   line-height: 1;
@@ -1516,17 +1759,21 @@ footer p, .registro p, .acceso p, .ventana-cookies p, #alojamientos h3, .lugar-c
   position: absolute;
 }
 
-#timeline #paso-uno .dot, #timeline #paso-dos .dot, #timeline #paso-tres .dot, #timeline #paso-cuatro .dot, #timeline #paso-cinco .dot {
+#timeline #paso-uno .dot, #timeline #paso-dos .dot, #timeline #paso-tres .dot, #timeline #paso-cuatro .dot, #timeline #paso-cinco .dot, #timeline-casa #paso-uno .dot, #timeline-casa #paso-dos .dot, #timeline-casa #paso-tres .dot, #timeline-casa #paso-cuatro .dot {
   background-color: #fff;
   border: 1px solid #f5b335;
 }
 
-#timeline #paso-uno .dot {
+#timeline #paso-uno .dot, #timeline-casa #paso-uno .dot {
   left: 0;
 }
 
 #timeline #paso-uno p {
   left: -40px;
+}
+
+#timeline-casa #paso-uno p {
+  left: -80px;
 }
 
 #timeline #paso-dos .dot {
@@ -1537,12 +1784,16 @@ footer p, .registro p, .acceso p, .ventana-cookies p, #alojamientos h3, .lugar-c
   left: 22%;
 }
 
-#timeline #paso-tres .dot {
+#timeline #paso-tres .dot, #timeline-casa #paso-dos .dot {
   left: 50%;
 }
 
 #timeline #paso-tres p {
   left: 45%;
+}
+
+#timeline-casa #paso-dos p {
+  left: 43%;
 }
 
 #timeline #paso-cuatro .dot {
@@ -1553,7 +1804,7 @@ footer p, .registro p, .acceso p, .ventana-cookies p, #alojamientos h3, .lugar-c
   left: 67%;
 }
 
-#timeline #paso-cinco .dot {
+#timeline #paso-cinco .dot, #timeline-casa #paso-cuatro .dot {
   left: 97%;
 }
 
@@ -1561,12 +1812,43 @@ footer p, .registro p, .acceso p, .ventana-cookies p, #alojamientos h3, .lugar-c
   left: 95%;
 }
 
-#timeline .dot p {
+#timeline-casa #paso-cuatro p {
+  right: -72px;
+}
+
+#timeline .dot p, #timeline-casa .dot p {
   font-size: 1.1rem;
   display: block;
   position: relative;
   top: -60px;
   text-align: center;
+}
+
+.subir-documento {
+  color: #34495e;
+  cursor: pointer;
+  height: 40px;
+  line-height: 40px;
+  text-align: left;
+  background: #fff;
+  overflow: hidden;
+  position: relative;
+}
+
+.subir-documento input {
+  z-index: 9;
+}
+
+.subir-documento .btn-subir-archivo {
+  background: #758592;
+  padding: 0 10px;
+  right: 0;
+  position: absolute;
+}
+
+.subir-documento .nombre-archivo {
+  padding: 0 10px;
+  position: absolute;
 }
 
 .registro-activo {
@@ -1579,7 +1861,7 @@ footer p, .registro p, .acceso p, .ventana-cookies p, #alojamientos h3, .lugar-c
   border-radius: 50%;
 }
 
-.f-modal-alert, .modal-calendar, .modal-casa, .chatbox {
+.f-modal-alert, .modal-calendar, .modal-casa, .modal-contenido-fechas, .chatbox {
   border-radius: 20px;
   background-color: #fff;
   box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
@@ -1935,16 +2217,6 @@ footer p, .registro p, .acceso p, .ventana-cookies p, #alojamientos h3, .lugar-c
   }
 }
 
-@media (max-width: 1300px) {
-  li:hover ul.submenu {
-    right: 310px;
-  }
-
-  .sticky li:hover ul.submenu {
-    right: 350px;
-  }
-}
-
 @media (max-width: 1024px) {
   .submenu {
     top: 0;
@@ -2009,7 +2281,7 @@ footer p, .registro p, .acceso p, .ventana-cookies p, #alojamientos h3, .lugar-c
     align-items: center;
   }
 
-  .header .menu, .registro, .acceso, #inicio .buscador, .sticky #buscador-sticky, #mapa-experiencia, #sidebar-casa, .area-usuario-menu {
+  .header .menu, .registro, .acceso, #inicio .buscador, .sticky #buscador-sticky, #mapa-experiencia, #sidebar-casa, #chat-contactos, .area-usuario-menu, #comunidad .crear-publicacion, .info-usuario {
     display: none;
   }
 
@@ -2025,7 +2297,7 @@ footer p, .registro p, .acceso p, .ventana-cookies p, #alojamientos h3, .lugar-c
     width: 90%;
   }
 
-	.ventana-cookies {
+	.ventana-cookies, .modal-contenido-fechas {
 		width: 80%;
 	}
 }
@@ -2047,7 +2319,7 @@ footer p, .registro p, .acceso p, .ventana-cookies p, #alojamientos h3, .lugar-c
 		width: 55%;
 	}
 
-	.ventana-cookies {
+	.ventana-cookies, .modal-contenido-fechas {
 		width: 95%;
 	}
 
@@ -2059,6 +2331,10 @@ footer p, .registro p, .acceso p, .ventana-cookies p, #alojamientos h3, .lugar-c
     display: none;
   }
 
+  .fechas-disponibles {
+    margin-bottom: 20px;
+  }
+
   #ventana-galeria .modal-casa {
     height: auto;
   }
@@ -2067,7 +2343,7 @@ footer p, .registro p, .acceso p, .ventana-cookies p, #alojamientos h3, .lugar-c
     top: -70px;
   }
 
-  #timeline .tercer-timeline #paso-cuatro {
+  #timeline .tercer-timeline #paso-cuatro, #timeline-casa .segundo-timeline #paso-tres {
     display: block;
   }
 
@@ -2075,11 +2351,11 @@ footer p, .registro p, .acceso p, .ventana-cookies p, #alojamientos h3, .lugar-c
     margin-top: 10px;
   }
 
-  #timeline #paso-uno p, #timeline #paso-tres .segundo-timeline p, #timeline #paso-tres .dot, #timeline .tercer-timeline #paso-cuatro .dot {
+  #timeline #paso-uno p, #timeline-casa #paso-uno p, #timeline #paso-tres .segundo-timeline p, #timeline #paso-tres .dot, #timeline .tercer-timeline #paso-cuatro .dot {
     left: 0%;
   }
 
-  #timeline #paso-dos .dot, #timeline .segundo-timeline #paso-cuatro .dot, #timeline #paso-cinco .dot {
+  #timeline #paso-dos .dot, #timeline-casa #paso-dos .dot, #timeline .segundo-timeline #paso-cuatro .dot, #timeline-casa #paso-cuatro .dot, #timeline #paso-cinco .dot {
     left: 94%;
   }
 
@@ -2088,12 +2364,12 @@ footer p, .registro p, .acceso p, .ventana-cookies p, #alojamientos h3, .lugar-c
     text-align: left;
   }
 
-  #timeline #paso-dos p, #timeline .segundo-timeline #paso-cuatro p, #timeline #paso-cinco p {
+  #timeline #paso-dos p, #timeline-casa #paso-dos p, #timeline .segundo-timeline #paso-cuatro p, #timeline-casa #paso-cuatro p, #timeline #paso-cinco p {
     left: 50%;
     text-align: right;
   }
 
-  #timeline #paso-uno p, #timeline #paso-tres p, #timeline #paso-dos p, #timeline #paso-cuatro p, #timeline #paso-cinco p {
+  #timeline #paso-uno p, #timeline-casa #paso-dos p, #timeline #paso-tres p, #timeline-casa #paso-cuatro p, #timeline #paso-dos p, #timeline #paso-cuatro p, #timeline #paso-cinco p {
     width: 50%;
   }
 
@@ -2132,6 +2408,10 @@ footer p, .registro p, .acceso p, .ventana-cookies p, #alojamientos h3, .lugar-c
     font-size: 16px;
   }
 
+  .publicacion .descripcion-publicacion {
+    font-size: 16px !important;
+  }
+
   .submenu-area-usuario {
     justify-content: space-between;
   }
@@ -2147,6 +2427,10 @@ footer p, .registro p, .acceso p, .ventana-cookies p, #alojamientos h3, .lugar-c
 
   .resultado-nombre-casa #nofavorito, .resultado-nombre-casa #favorito, .imagenes-galeria {
     display: none;
+  }
+
+  .modal-calendar table td, #datos-registro-disponibilidad table td, #datos-disponibilidad table td {
+    height: 40px;
   }
 
   #galeria-casa button {
@@ -2214,7 +2498,7 @@ footer p, .registro p, .acceso p, .ventana-cookies p, #alojamientos h3, .lugar-c
     display: block;
   }
 
-  #fecha-registro, .valoracion-anfitrion span, .valoracion-anfitrion p {
+  #fecha-registro, .valoracion-anfitrion span, .valoracion-anfitrion p, .chat-contactos .datos-usuario p, .publicacion .descripcion-publicacion {
     font-size: 16px;
   }
 
@@ -2226,12 +2510,29 @@ footer p, .registro p, .acceso p, .ventana-cookies p, #alojamientos h3, .lugar-c
 	  margin-bottom: 40px;
 	}
 
-	#contacto {
-	  padding: 60px 0px 80px;
-	}
-
   #buscador-sticky, #buscador-responsive {
     margin: 0 5px;
+  }
+
+  #timeline-casa #paso-uno p, #timeline-casa #paso-tres p {
+    text-align: left;
+  }
+
+  #timeline-casa #paso-dos p, #timeline-casa #paso-cuatro p {
+    text-align: right;
+  }
+
+  #timeline-casa #paso-uno p, #timeline-casa #paso-dos p, #timeline-casa #paso-tres p, #timeline-casa #paso-cuatro p {
+    top: -70px;
+    width: 50%;
+  }
+
+  #timeline-casa #paso-dos .dot, #timeline-casa #paso-cuatro .dot {
+    left: 87%;
+  }
+
+  #gestionar-casa .btn-verde, #gestionar-casa .btn-naranja {
+    margin: 40px 5px 0px 5px;
   }
 
   .testimonio {
@@ -2288,5 +2589,44 @@ footer p, .registro p, .acceso p, .ventana-cookies p, #alojamientos h3, .lugar-c
 
   .chatbox, #chatbox #boton-cerrar {
     right: 10px;
+  }
+
+  .chat-contactos .foto-usuario img, .publicacion .datos-usuario .foto-usuario img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .publicacion .likes-publicacion, .publicacion .vercomentarios-publicacion, .publicacion .caja-texto input[type=text] {
+    font-size: 14px;
+  }
+
+  .comentarios-publicacion p {
+    font-size: 12px;
+  }
+
+  .publicacion {
+    padding: 0;
+  }
+
+  .publicacion, .publicacion:hover {
+    box-shadow: none;
+  }
+
+  .publicacion .datos-usuario .nombre-usuario {
+    line-height: 1.2;
+  }
+
+  .publicacion .caja-texto .foto-usuario img, .publicacion .comentarios-publicacion .foto-usuario img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .publicacion .respuesta-comentario {
+    margin-left: 20px;
+  }
+
+  .publicacion .caja-texto input[type=text] {
+    width: 80%;
+    margin: 0px;
   }
 }

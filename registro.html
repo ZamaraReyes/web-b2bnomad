@@ -71,6 +71,17 @@
 			 								<input type="text" id="telefono" name="telefono" placeholder="Teléfono*" required>
 			 								<input type="text" id="direccion" name="direccion" placeholder="Dirección*" required>
 			 							</div>
+			 							<div class="col-12">
+					 						<label for="documento_identidad">Imagen de perfil*</label>
+											<div class="subir-documento">
+												<div class="nombre-archivo" id="nombre-archivo">fotomia.jpg</div>
+											    <input type="file" name="imagen_perfil" id="imagen_perfil">
+											    <div class="btn-subir-archivo" id="fileName">Seleccionar</div>
+											</div>
+					 					</div>
+					 					<div class="col-12">
+					 						<textarea id="descripcion_personal" name="descripcion_personal" placeholder="Descripción personal*" maxlength="140" required></textarea>
+					 					</div>
 			 							<div class="col-12 text-center">
 			 								<p class="frase-registro">Ya tienes 10 NomadCoins, consigue 10 más en el siguiente paso</p>
 			 							</div>
@@ -119,6 +130,28 @@
 					 							</div>
 					 						</div>
 			 							</div>
+			 							<div class="col-12">
+					 						<label for="documento_identidad">Imágenes de la casa*</label>
+											<div class="subir-documento">
+												<div class="nombre-archivo" id="nombre-archivo">sala_estar.jpg, baño.jpg, cocina.jpg</div>
+											    <input type="file" name="subir_foto_casa" id="subir_foto_casa" multiple>
+											    <div class="btn-subir-archivo" id="fileName">Seleccionar</div>
+											</div>
+					 					</div>
+					 					<div class="col-12">
+					 						<textarea id="descripcion_casa" name="descripcion_casa" placeholder="Descripción de la casa*" maxlength="140" required></textarea>
+					 					</div>
+					 					<div class="col-12">
+					 						<label for="documento_identidad">Imágenes de la zona*</label>
+											<div class="subir-documento">
+												<div class="nombre-archivo" id="nombre-archivo">calle.jpg, calle.jpg</div>
+											    <input type="file" name="subir_foto_zona" id="subir_foto_zona" multiple>
+											    <div class="btn-subir-archivo" id="fileName">Seleccionar</div>
+											</div>
+					 					</div>
+					 					<div class="col-12">
+					 						<textarea id="descripcion_zona" name="descripcion_zona" placeholder="Descripción de la zona*" maxlength="140" required></textarea>
+					 					</div>
 			 						</div>
 			 						<div class="row">
 			 							<div class="col-12">
@@ -250,17 +283,23 @@
 			 								<p class="frase-destacado text-center">B2BNomad se basa en la confianza y queremos que te sientas seguro de pertenecer a nuestra comunidad.</p>
 			 								<div class="col-12 col-md-6">
 			 									<div class="subir-archivo">
-												      <input type="file" name="fotocopia_dni" id="fotocopia_dni">
-												       <img src="./img/fotocopia-dni.svg"/>
-												       <p>Subir fotocopia del dni por las dos caras</p>
-												   </div>
+			 										<div class="nombre-archivo ocultar" id="nombre-archivo-dni">DNI.jpg</div>
+			 										<div>
+													   	<input type="file" name="fotocopia_dni" id="fotocopia_dni">
+													    <img src="./img/fotocopia-dni.svg">
+													    <p>Subir fotocopia del dni por las dos caras</p>
+													</div>
+												</div>
 						 					</div>
 					 						<div class="col-12 col-md-6">
 					 							<div class="subir-archivo">
-												   		<input type="file" name="registro_propiedad" id="registro_propiedad">
-												       	<img src="./img/registro-propiedad.svg"/>
-												       	<p>Subir fotocopia del registro de la propiedad</p>
-												   </div>
+					 								<div class="nombre-archivo ocultar" id="nombre-archivo-propiedad">propiedad_casa.pdf</div>
+					 								<div>
+													  	<input type="file" name="registro_propiedad" id="registro_propiedad">
+													    <img src="./img/registro-propiedad.svg">
+													    <p>Subir fotocopia del registro de la propiedad</p>
+													</div>
+												</div>
 						 					</div>
 			 							</div>
 			 							<div class="col-12 text-center">
