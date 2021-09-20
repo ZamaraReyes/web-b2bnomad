@@ -24,15 +24,15 @@ textarea {
   height: 150px;
 }
 
-.numero-imagenes p {
+.numero-imagenes p, .articulo-relacionado .descripcion a {
   font-size: 10px;
 }
 
-.modal-calendar h2, #anfitrion .nombre-anfitrion, #ventana-disponibilidad h2, .nomad-promo h2 {
+.modal-calendar h2, #anfitrion .nombre-anfitrion, #ventana-disponibilidad h2, .nomad-promo h2, .articulo:nth-child(6n+1) h2, #articulo h2, #ventana-valorar-experiencia .modal-contenido .stars label:before {
   font-size: 32px;
 }
 
-.datos-usuario p, .frase-destacado, .redes-sociales i, .submenu-area-usuario a, .titulo-registro, .frase-calendario, #datos-casa .lugar-casa, .calendario-mes, .frase-promo {
+.frase-destacado, .redes-sociales i, .submenu-area-usuario a, .titulo-registro, .frase-calendario, #datos-casa .lugar-casa, .calendario-mes, .frase-promo {
   font-size: 20px;
 }
 
@@ -44,7 +44,7 @@ textarea {
   margin: 10px 0 20px;
 }
 
-h3, .nombre-casa, .resultado-nombre-casa i, .top-bar .nombre-anfitrion, #menu-casa-responsive i, .frase-registro, .nombre-emisor, .area-usuario-menu .datos-usuario p, #ventana-galeria button, .frase-servicio, .btn-editar i, #sidebar-casa h2, .cambiar-imagen-perfil i, .promociones .nomad-promo h2, .crear-publicacion i, .publicacion .caja-texto i, .publicacion .opciones-publicacion i, .subir-imagen i, .coins-usuario {
+h3, .nombre-casa, .resultado-nombre-casa i, .top-bar .nombre-anfitrion, #menu-casa-responsive i, .frase-registro, .nombre-emisor, .area-usuario-menu .datos-usuario p, #ventana-galeria button, .frase-servicio, .btn-editar i, #sidebar-casa h2, .cambiar-imagen-perfil i, .promociones .nomad-promo h2, .crear-publicacion i, .publicacion .caja-texto i, .publicacion .opciones-publicacion i, .subir-imagen i, .coins-usuario, .articulo h2, #boton-cerrar i {
 	font-size: 24px;
 }
 
@@ -53,7 +53,7 @@ h3, .nombre-casa, .resultado-nombre-casa i, .top-bar .nombre-anfitrion, #menu-ca
 }
 
 
-h1, h2, h3, h4, .formulario-registro label, .buscador label, .nombre-casa, .calendario-mes, .calendario-dia, .frase-calendario, .resultado-busqueda p, #nombre-huespede, .nombre-anfitrion, .titulo-registro, .subir-archivo p, .frase-registro, .titulo-dato, .nombre-emisor, .notificacion-noleida .nombre-notificacion, .mensaje-noleido .ultimo-mensaje, .notificacion-noleida .fecha-notificacion, .frase-servicio, .precio, .publicacion .likes-publicacion span, .publicacion .descripcion-publicacion span, .publicacion .opciones-comentario div p, .publicacion .nombre-usuario {
+h1, h2, h3, h4, .formulario-registro label, .buscador label, .nombre-casa, .calendario-mes, .calendario-dia, .frase-calendario, .resultado-busqueda p, #nombre-huespede, .nombre-anfitrion, .titulo-registro, .subir-archivo p, .frase-registro, .titulo-dato, .nombre-emisor, .notificacion-noleida .nombre-notificacion, .mensaje-noleido .ultimo-mensaje, .notificacion-noleida .fecha-notificacion, .frase-servicio, .precio, .publicacion .likes-publicacion span, .publicacion .descripcion-publicacion span, .opciones-comentario div p, .opciones-mensaje div p, .nombre-usuario, .frase-respuesta, #simple span, #valorar-experiencia p {
 	font-weight: 700;
 }
 
@@ -62,9 +62,9 @@ h1, h2, h3, h4, .formulario-registro label, .buscador label, .nombre-casa, .cale
   padding: 50px 25px;
 }
 
-.nomad-promo, .crear-publicacion, .publicacion, .chat-contactos, .info-usuario {
+.nomad-promo, .crear-publicacion, .publicacion, .chat-contactos, .info-usuario, .articulo, .articulo-relacionado {
   border-radius: 24px;
-  box-shadow: 0px 0px 2px rgb(80 80 80 / 10%);
+  border: 1px solid rgba(117,133,146,0.1);
 }
 
 .promociones .nomad-promo, .crear-publicacion, .publicacion, .chat-contactos, .info-usuario {
@@ -96,9 +96,10 @@ h1, h2, h3, h4, .formulario-registro label, .buscador label, .nombre-casa, .cale
   margin-bottom: 20px;
 }
 
-.nomad-promo:hover, .crear-publicacion:hover, .publicacion:hover, .chat-contactos:hover, .info-usuario:hover {
+.nomad-promo:hover, .crear-publicacion:hover, .publicacion:hover, .chat-contactos:hover, .info-usuario:hover, .articulo:hover, .articulo-relacionado:hover {
   transition: all .2s ease-out;
   box-shadow: 0px 0px 20px rgb(80 80 80 / 10%);
+  /*transform: translate3D(0, -1px, 0) scale(1.02);*/
 }
 
 .nombre-anfitrion {
@@ -106,19 +107,19 @@ h1, h2, h3, h4, .formulario-registro label, .buscador label, .nombre-casa, .cale
   line-height: 0.8;
 }
 
-.datos-usuario p {
+.datos-usuario p, .categoria {
   font-weight: 700 !important;
 }
 
-h1, h2, h3, h4, .menu li a, .btn-verde, .btn-naranja, .btn-rojo, .btn-buscador, .buscador label, .nombre-casa, .experiencia-casa, .valoracion-casa span, .valoracion-anfitrion span, .calendario-mes, .calendario-dia, .frase-calendario, .resultado-busqueda p, .nombre-anfitrion, .frase-registro, .nombre-emisor, .frase-servicio, .precio, .chat-contactos .datos-usuario p, .publicacion .nombre-usuario {
+h1, h2, h3, h4, .menu li a, .btn-verde, .btn-naranja, .btn-rojo, .btn-buscador, .buscador label, .nombre-casa, .experiencia-casa, .valoracion-casa span, .valoracion-anfitrion span, .calendario-mes, .calendario-dia, .frase-calendario, .resultado-busqueda p, .nombre-anfitrion, .frase-registro, .nombre-emisor, .frase-servicio, .precio, .chat-contactos .datos-usuario p, .nombre-usuario, .categoria, .articulo .descripcion a, .articulo-relacionado .descripcion a {
 	font-family: 'Josefin Sans', sans-serif;
 }
 
-h1, h2, h3, h4, .menu li a, .btn-verde, .btn-naranja, .btn-rojo, .btn-buscador, .buscador label, .nombre-casa, .experiencia-casa, .valoracion-casa span, .valoracion-anfitrion span, .calendario-mes, .resultado-busqueda p, .nombre-anfitrion, .subir-archivo, .frase-registro, .nombre-emisor, .frase-servicio, .chat-contactos .datos-usuario p, .publicacion .nombre-usuario {
+h1, h2, h3, h4, .menu li a, .btn-verde, .btn-naranja, .btn-rojo, .btn-buscador, .buscador label, .nombre-casa, .experiencia-casa, .valoracion-casa span, .valoracion-anfitrion span, .calendario-mes, .resultado-busqueda p, .nombre-anfitrion, .subir-archivo, .frase-registro, .nombre-emisor, .frase-servicio, .chat-contactos .datos-usuario p, .nombre-usuario, .categoria, .articulo .descripcion a, .articulo-relacionado .descripcion a {
   text-transform: uppercase;
 }
 
-p, .dias, .submenu-area-usuario a, .formulario-registro label, .frase-promo, .publicacion .comentarios-publicacion i {
+p, .dias, .submenu-area-usuario a, .formulario-registro label, .frase-promo, .publicacion .comentarios-publicacion i, .frase-respuesta {
 	color: #4a4f54;
 }
 
@@ -126,9 +127,12 @@ p, .dias, .submenu-area-usuario a, .formulario-registro label, .frase-promo, .pu
   color: #4a4f54 !important;
 }
 
-p, label, input::placeholder, .formulario-contacto input[type=text], .formulario-contacto input[type=number], .formulario-contacto input[type=email], .formulario-contacto textarea, .formulario-contacto input[type=checkbox], .formulario-registro input[type=text], .formulario-registro input[type=number], .formulario-registro input[type=email], .formulario-registro input[type=checkbox], .formulario-registro textarea, .formulario-contacto input[type=email], .formulario-contacto select, .formulario-registro select, .formulario-registro input[type=file], #contacto span, .submenu li a, .menu-usuario li a, .area-usuario-menu li a, .btn-azul-izquierda, .btn-azul-derecha, .header .correo a, .header .telefono a, .valoracion-casa p, .valoracion-anfitrion p, .footer li a, .menu-usuario a, .dias, #menu-usuario a, #menu-usuario p, .paginacion-listado li, #nota-evaluacion, .submenu-area-usuario a, .formulario-acceso input[type=email], .formulario-acceso input[type=password], .subir-documento .nombre-archivo, .subir-documento .btn-subir-archivo, .crear-publicacion textarea {
-	font-weight: 300;
+p, label, input::placeholder, .formulario-contacto input[type=text], .formulario-contacto input[type=number], .formulario-contacto input[type=email], .formulario-contacto textarea, .formulario-contacto input[type=checkbox], .formulario-registro input[type=text], .formulario-registro input[type=number], .formulario-registro input[type=email], .formulario-registro input[type=checkbox], .formulario-registro textarea, .formulario-contacto input[type=email], .formulario-contacto select, .formulario-registro select, .formulario-registro input[type=file], #contacto span, .submenu li a, .menu-usuario li a, .area-usuario-menu li a, .btn-azul-izquierda, .btn-azul-derecha, .header .correo a, .header .telefono a, .valoracion-casa p, .valoracion-anfitrion p, .footer li a, .menu-usuario a, .dias, #menu-usuario a, #menu-usuario p, .paginacion-listado li, #nota-evaluacion, .submenu-area-usuario a, .formulario-acceso input[type=email], .formulario-acceso input[type=password], .subir-documento .nombre-archivo, .subir-documento .btn-subir-archivo, .crear-publicacion textarea, .articulo h2, #articulo h1, .articulo-relacionado h3 {
   font-family: 'Nunito', sans-serif;
+}
+
+p, label, input::placeholder, .formulario-contacto input[type=text], .formulario-contacto input[type=number], .formulario-contacto input[type=email], .formulario-contacto textarea, .formulario-contacto input[type=checkbox], .formulario-registro input[type=text], .formulario-registro input[type=number], .formulario-registro input[type=email], .formulario-registro input[type=checkbox], .formulario-registro textarea, .formulario-contacto input[type=email], .formulario-contacto select, .formulario-registro select, .formulario-registro input[type=file], #contacto span, .submenu li a, .menu-usuario li a, .area-usuario-menu li a, .btn-azul-izquierda, .btn-azul-derecha, .header .correo a, .header .telefono a, .valoracion-casa p, .valoracion-anfitrion p, .footer li a, .menu-usuario a, .dias, #menu-usuario a, #menu-usuario p, .paginacion-listado li, #nota-evaluacion, .submenu-area-usuario a, .formulario-acceso input[type=email], .formulario-acceso input[type=password], .subir-documento .nombre-archivo, .subir-documento .btn-subir-archivo, .crear-publicacion textarea {
+  font-weight: 300;
 }
 
 nav, .notificacion-leida, .notificacion-noleida {
@@ -140,7 +144,7 @@ nav, #menu-usuario, #menu-casa-responsive {
   position: fixed;
 }
 
-nav a, .registro p, .acceso p, .btn-buscador i, .buscador input, .buscador p, #menu-casa-responsive a, .tiempo-contacto, .coins-menu p {
+nav a, .registro p, .acceso p, .btn-buscador i, .buscador input, .buscador p, #menu-casa-responsive a, .publicacion .tiempo-contacto, .coins-menu p, .articulo-relacionado .categoria, .pie-footer, .acceso .notificacion, .notificacion-coins, .chat-escribiendo, .editar-dato, .opciones-comentario, .fecha-llegada, .fecha-salida, .articulo .descripcion a, .articulo-relacionado .descripcion {
 	font-size: 12px;
 }
 
@@ -172,7 +176,7 @@ nav a, .registro p, .acceso p, .btn-buscador i, .buscador input, .buscador p, #m
   margin-bottom: 10px;
 }
 
-.publicacion .datos-usuario, .imagen-publicacion {
+.publicacion .datos-usuario, #comunidad .imagen-publicacion, .mensaje-articulo {
   margin-bottom: 20px;
 }
 
@@ -198,7 +202,7 @@ nav li a {
   cursor: pointer;
 }
 
-nav li a, .paginacion-listado a, .publicacion .comentario a, .publicacion .nombre-usuario {
+nav li a, .paginacion-listado a, .publicacion .comentario a, .nombre-usuario {
   text-decoration: none;
 }
 
@@ -245,17 +249,7 @@ nav li a, h1, .menu li a, footer p, .btn-buscador, .btn-buscador:hover, .btn-ver
   color: #fff !important;
 }
 
-/*header {
-	background-size: cover;
-	background-position: bottom;
-	background-image: url(../img/b2bnomad.jpeg);
-}*/
-
-/*header, #inicio:after {
-  height: 100%;
-}*/
-
-#menu-usuario {
+#menu-usuario, #datos-casa, #listado-alojamientos {
   height: 100vh;
 }
 
@@ -275,11 +269,15 @@ input[type=submit], button {
   margin-right: 2px;
 }
 
-.footer a, footer .correo i, footer .telefono i, .top-bar .foto-usuario, .crear-publicacion .foto-usuario img, .subir-imagen-video i, .publicacion .foto-usuario img, .opciones-comentario p {
+.footer a, footer .correo i, footer .telefono i, .top-bar .foto-usuario, .crear-publicacion .foto-usuario img, .subir-imagen-video i, .opciones-comentario p, .opciones-mensaje p {
   margin-right: 10px;
 }
 
-.valoracion-casa span, .valoracion-anfitrion span, .fecha-llegada {
+.publicacion .foto-usuario img {
+  margin-right: 12px;
+}
+
+.valoracion-casa span, .valoracion-anfitrion span, .fecha-llegada, .articulo .fecha-publicacion, .articulo-relacionado .fecha-publicacion {
   margin-right: 5px;
 }
 
@@ -288,7 +286,7 @@ input[type=submit], button {
 }
 
 .formulario-contacto input[type=text], .formulario-contacto input[type=number], .formulario-contacto input[type=email], .formulario-registro input[type=text], .formulario-registro input[type=number], .formulario-registro input[type=email], .formulario-contacto select, .formulario-contacto textarea, .formulario-registro select, .formulario-registro textarea, .formulario-registro input[type=file], .subir-documento, .formulario-acceso input[type=email], .formulario-acceso input[type=password] {
-  margin: 5px 0;
+  margin: 10px 0;
   border-radius: 6px;
   background-color: transparent;
 }
@@ -417,7 +415,7 @@ input::placeholder, input[type=text], input[type=number], input[type=email], .bu
   font-weight: 300;
 }
 
-.formulario-contacto input::placeholder, input[type=text], input[type=number], input[type=email], textarea, .formulario-contacto select, .formulario-registro select, .celda-registro p, .buscador p, .desactivo, .caracteristica-casa, #nota-evaluacion, #testimonio, #fecha-huespede, .valoracion-anfitrion p, .leyenda-calendario p, .formulario-registro select, label, .dato-usuario p, .dato-casa p, .valoracion-casa p, .notificacion-leida p, #notificaciones button i, .mensaje-leido .ultimo-mensaje, .fecha-mensaje, .fecha-salida, .fecha-llegada, .promo-coins, .buscador-contacto input[type=text], .tiempo-contacto, .caja-texto input[type=text], .publicacion .vercomentarios-publicacion, .celda-registro label, .nombre-archivo, .coins-usuario, .coins-menu p {
+.formulario-contacto input::placeholder, input[type=text], input[type=number], input[type=email], textarea, .formulario-contacto select, .formulario-registro select, .celda-registro p, .buscador p, .desactivo, .caracteristica-casa, #nota-evaluacion, #testimonio, #fecha-huespede, .valoracion-anfitrion p, .leyenda-calendario p, .formulario-registro select, label, .dato-usuario p, .dato-casa p, .valoracion-casa p, .notificacion-leida p, #notificaciones button i, .mensaje-leido .ultimo-mensaje, .fecha-mensaje, .fecha-salida, .fecha-llegada, .promo-coins, .buscador-contacto input[type=text], .opciones-comentario p, .opciones-mensaje p, .caja-texto input[type=text], .publicacion .vercomentarios-publicacion, .celda-registro label, .nombre-archivo, .coins-usuario, .coins-menu p, .fecha-publicacion {
   color: #758592;
 }
 
@@ -446,7 +444,7 @@ input::placeholder, input[type=text], input[type=number], input[type=email], .bu
   margin-bottom: 10px !important;
 }
 
-.descripcion-promo {
+.descripcion-promo, .articulo-relacionado h3 {
   margin-bottom: 5px;
 }
 
@@ -459,7 +457,7 @@ footer p {
 	padding: 10px 0;
 }
 
-footer a, .valoracion-casa span, .valoracion-anfitrion span, h4, #menu-casa-responsive i, .frases-accesos a, .btn-editar i, #contacto a, .precio, .publicacion .descripcion-publicacion a, .publicacion .comentario a {
+footer a, .valoracion-casa span, .valoracion-anfitrion span, h4, #menu-casa-responsive i, .frases-accesos a, .btn-editar i, #contacto a, .precio, .publicacion .descripcion-publicacion a, .publicacion .comentario a, .articulo .descripcion a, .articulo-relacionado .descripcion a {
 	color: #f5b335;
 }
 
@@ -523,7 +521,7 @@ li:hover ul.submenu {
   top: 200px;
 }
 
-#que-es h2, #alojamientos h2, #experiencias h1, h3, .submenu li a, .ventana-cookies p, #mensaje-exito p, #mensaje-error p, .nombre-casa, .menu-usuario a, .modal-calendar h2, .frase-destacado, .frase-calendario, .redes-sociales i, #menu-usuario a, #menu-usuario p, #resultado-total-alojamientos, #resultado-fecha-llegada, #resultado-fecha-salida, #resultado-experiencia, #resultado-lugar, #resultado-total-alojamientos, #resultado-fecha-llegada, #resultado-fecha-salida, #resultado-experiencia, #resultado-lugar, #ficha-casa h1, #ficha-casa h2, #nombre-huespede, #anfitrion .nombre-anfitrion, .modal-casa h2, #ventana-editar-fechas h2, #ventana-disponibilidad h2, #datos-registro-bienvenido h2, .area-usuario-menu a, #area-usuario h2, .notificacion-noleida .nombre-notificacion, .nombre-emisor, .area-usuario-menu .datos-usuario p, #iniciar-sesion h1, .frase-servicio, #nomadcoins h1, #promos h1, #comunidad h1, #contacto h1, .nomad-promo h2, .chat-contactos .datos-usuario p, .publicacion .nombre-usuario, .publicacion .descripcion-publicacion span, .publicacion .likes-publicacion span {
+#que-es h2, #alojamientos h2, #experiencias h1, h3, .submenu li a, .ventana-cookies p, #mensaje-exito p, #mensaje-error p, .nombre-casa, .menu-usuario a, .modal-calendar h2, .frase-destacado, .frase-calendario, .redes-sociales i, #menu-usuario a, #menu-usuario p, #resultado-total-alojamientos, #resultado-fecha-llegada, #resultado-fecha-salida, #resultado-experiencia, #resultado-lugar, #resultado-total-alojamientos, #resultado-fecha-llegada, #resultado-fecha-salida, #resultado-experiencia, #resultado-lugar, #ficha-casa h1, #ficha-casa h2, #nombre-huespede, #anfitrion .nombre-anfitrion, .modal-casa h2, #ventana-editar-fechas h2, #ventana-disponibilidad h2, #datos-registro-bienvenido h2, .area-usuario-menu a, #area-usuario h2, .notificacion-noleida .nombre-notificacion, .nombre-emisor, .area-usuario-menu .datos-usuario p, #iniciar-sesion h1, .frase-servicio, #nomadcoins h1, #promos h1, #comunidad h1, #contacto h1, #simple h1, .nomad-promo h2, #blog h1, #articulo h1, .chat-contactos .datos-usuario p, .nombre-usuario, .nombre-usuario:hover, .publicacion .descripcion-publicacion span, .publicacion .likes-publicacion span, .articulo h2, #articulo h1, .articulo-relacionado h3, #articulo h2, #articulo h3 {
 	color: #243746;
 }
 
@@ -547,10 +545,6 @@ li:hover ul.submenu {
 	text-decoration: underline;
 }
 
-/*#listado-alojamientos, #datos-casa {
-  overflow: scroll;
-}*/
-
 #contacto .btn-verde {
 	padding: 17px 30px 13px 30px;
 }
@@ -558,16 +552,6 @@ li:hover ul.submenu {
 .espacio-alto {
   padding-top: 150px;
 } 
-
-/*#inicio:after {
-	top: 0;
-	right: 0;
-	content: '';
-	width: 100%;
-  overflow: hidden;
-	position: absolute;
-	background-color: rgba(0,0,0,0.5);
-}*/
 
 #inicio video {
   width: 100%;
@@ -586,7 +570,7 @@ li:hover ul.submenu {
 	padding: 80px 0;
 }
 
-#experiencias, #registro, #ficha-casa, #area-usuario, #iniciar-sesion, #nomadcoins, #promos, #comunidad, #gestionar-casa, #contacto {
+#experiencias, #registro, #ficha-casa, #area-usuario, #iniciar-sesion, #nomadcoins, #promos, #comunidad, #gestionar-casa, #contacto, #simple, #blog, #articulo {
   padding: 150px 0 80px;
 }
 
@@ -594,7 +578,7 @@ li:hover ul.submenu {
   padding: 0 0 80px;
 }
 
-#que-es .linea, #alojamientos .linea, #datos-registro-bienvenido .linea, #iniciar-sesion .linea, #nomadcoins .linea, #promos .linea, #comunidad .linea, #contacto .linea {
+#que-es .linea, #alojamientos .linea, #datos-registro-bienvenido .linea, #iniciar-sesion .linea, #nomadcoins .linea, #promos .linea, #comunidad .linea, #contacto .linea, #simple .linea, #blog .linea, #articulo .linea {
   margin: auto;
 }
 
@@ -602,11 +586,11 @@ li:hover ul.submenu {
   margin: 0 10px;
 }
 
-#inicio, #que-es, #alojamientos h2, #mensaje-exito, #mensaje-error, #calendario-buscador .frase-destacado, .modal-calendar table, .fechas-disponibles table, .modal-calendar h2, #que-es .frase-destacado, #alojamiento .frase-destacado, #iniciar-sesion, #nomadcoins, #promos h1, #promos .frase-destacado, #comunidad h1, #comunidad .frase-destacado, #contacto h1, #contacto .frase-destacado, .frase-promo, .area-usuario-menu .datos-usuario, #sidebar-casa .btn-verde, #sidebar-casa .btn-naranja, #sidebar-casa .btn-rojo, .coins-usuario, .coins-menu p {
+#inicio, #que-es, #alojamientos h2, #mensaje-exito, #mensaje-error, #calendario-buscador .frase-destacado, .modal-calendar table, .fechas-disponibles table, .modal-calendar h2, #que-es .frase-destacado, #alojamiento .frase-destacado, #iniciar-sesion, #nomadcoins, #promos h1, #promos .frase-destacado, #comunidad h1, #comunidad .frase-destacado, #contacto h1, #contacto .frase-destacado, #simple h1, #simple .frase-destacado, #blog h1, #blog .frase-destacado, .frase-promo, .area-usuario-menu .datos-usuario, #sidebar-casa .btn-verde, #sidebar-casa .btn-naranja, #sidebar-casa .btn-rojo, .coins-usuario, .coins-menu p, #articulo h2 {
 	text-align: center;
 }
 
-#ventana-buscador input[type=text], .publicacion .nombre-usuario {
+#ventana-buscador input[type=text], .nombre-usuario {
   display: block;
 }
 
@@ -626,15 +610,15 @@ li:hover ul.submenu {
 	margin-bottom: 60px;
 }
 
-#experiencias .linea, #experiencias .frase-destacado, #datos-perfil .linea, #datos-perfil .frase-destacado, #inbox .linea, #inbox .frase-destacado, #notificaciones .linea, #notificaciones .frase-destacado, #mensajes .linea, #mensajes .frase-destacado, #mis-experiencias .linea, #mis-experiencias .frase-destacado, #favoritos .linea, #favoritos .frase-destacado, #ventana-editar-casa .linea, #ventana-editar-fechas .linea, #experiencias-deseadas .linea, #experiencias-deseadas .frase-destacado, #iniciar-sesion .linea, #iniciar-sesion .frase-destacado, #nomadcoins .linea, #nomadcoins .frase-destacado, #promos .linea, #promos .frase-destacado, #comunidad .linea, #comunidad .frase-destacado, #contacto .linea, #contacto .frase-destacado, .frase-promo {
+#experiencias .linea, #experiencias .frase-destacado, #datos-perfil .linea, #datos-perfil .frase-destacado, #inbox .linea, #inbox .frase-destacado, #notificaciones .linea, #notificaciones .frase-destacado, #mensajes .linea, #mensajes .frase-destacado, #mis-experiencias .linea, #mis-experiencias .frase-destacado, #favoritos .linea, #favoritos .frase-destacado, #ventana-editar-casa .linea, #ventana-editar-fechas .linea, #experiencias-deseadas .linea, #experiencias-deseadas .frase-destacado, #iniciar-sesion .linea, #iniciar-sesion .frase-destacado, #nomadcoins .linea, #nomadcoins .frase-destacado, #promos .linea, #promos .frase-destacado, #comunidad .linea, #comunidad .frase-destacado, #contacto .linea, #contacto .frase-destacado, #simple .linea, #blog .linea, #blog .frase-destacado, .frase-promo, #articulo .linea {
   margin-bottom: 40px;
 }
 
-footer p, .registro p, .acceso p, .ventana-cookies p, #alojamientos h3, .lugar-casa, .resultado-nombre-casa .experiencia-casa, .valoracion-casa span, .valoracion-casa p, #inicio p, #btn-intercambio p, #btn-peticiones p, #btn-nodisponible p, .modal-calendar h2, #buscador-modal p, .datos-usuario p, .resultado-nombre-casa h3, .caracteristica-casa, .resultado-busqueda p, .valoraciones p, #nombre-huespede, .servicios-alojamiento p, #anfitrion p, .leyenda-calendario p, #datos-casa h1, .nombre-anfitrion, .fecha-respuesta, .chat-escribiendo, .chat-usuario p, .chat-anfitrion p, #menu-casa-responsive p, .celda-registro p, #datos-perfil p, #gestionar-casa p, #notificaciones p, #inbox p, #mensajes p, .alojamiento-buscador h3, .alojamiento-reciente h3, .numero-imagenes p, .frase-calendario, .frases-accesos p, .nomad-promo h2, .precio, .promo-coins, .subir-imagen-video p, .tiempo-contacto, .likes-publicacion p, .publicacion .comentarios-publicacion p, #area-usuario .portada-alojamiento, #gestionar-casa .portada-alojamiento, #datos-disponibilidad .dato-casa:last-child, #promos h1, .coins-menu p {
+footer p, .registro p, .acceso p, .ventana-cookies p, #alojamientos h3, .lugar-casa, .resultado-nombre-casa .experiencia-casa, .valoracion-casa span, .valoracion-casa p, #inicio p, #btn-intercambio p, #btn-peticiones p, #btn-nodisponible p, .modal-calendar h2, #buscador-modal p, .datos-usuario p, .resultado-nombre-casa h3, .caracteristica-casa, .resultado-busqueda p, .valoraciones p, #nombre-huespede, .servicios-alojamiento p, #anfitrion p, .leyenda-calendario p, #datos-casa h1, .nombre-anfitrion, .fecha-respuesta, .chat-escribiendo, .chat-usuario p, .chat-anfitrion p, #menu-casa-responsive p, .celda-registro p, #datos-perfil p, #gestionar-casa p, #notificaciones p, #inbox p, #mensajes p, .alojamiento-buscador h3, .alojamiento-reciente h3, .numero-imagenes p, .frase-calendario, .frases-accesos p, .nomad-promo h2, .precio, .promo-coins, .subir-imagen-video p, .tiempo-contacto, .likes-publicacion p, .publicacion .comentarios-publicacion p, #area-usuario .portada-alojamiento, #gestionar-casa .portada-alojamiento, #datos-disponibilidad .dato-casa:last-child, #promos h1, .coins-menu p, .categoria, .articulo .fecha-publicacion, .articulo .descripcion, .articulo-relacionado .fecha-publicacion, .articulo-relacionado .descripcion, .mensaje-articulo p, #simple ul li p, .alojamiento-buscador p {
 	margin-bottom: 0px;
 }
 
-.coins-menu li:first-child a {
+.coins-menu li:first-child a, .frase-respuesta {
   margin-top: 20px;
 }
 
@@ -650,16 +634,16 @@ footer, .calendario-mes, .top-bar, .bottom-bar, .notificacion-coins {
 	background-color: #243746;
 }
 
-.experiencia-casa, .correo i, .telefono i, footer a:hover, .resultado-nombre-casa i, .nombre-anfitrion span, .top-bar .nombre-anfitrion, .subir-archivo p, .crear-publicacion i, .caja-texto button i, .subir-imagen i {
+.experiencia-casa, .correo i, .telefono i, footer a:hover, .resultado-nombre-casa i, .nombre-anfitrion span, .top-bar .nombre-anfitrion, .subir-archivo p, .crear-publicacion i, .caja-texto button i, .subir-imagen i, .categoria, #articulo .redes-sociales a i, #simple span, #valorar-experiencia p {
 	color: #3bd4ae;
 }
 
 #mapa-experiencia iframe {
   width: 100%;
-  height: 500px;
+  height: 100%;
 }
 
-#mensaje-exito, #mensaje-error, #ventana-buscador, #ventana-valoraciones, #ventana-servicios, #ventana-disponibilidad, #ventana-galeria, #ventana-editar-perfil, #ventana-editar-casa, #ventana-editar-fechas, #ventana-publicar, #ventana-contactos {
+#mensaje-exito, #mensaje-error, #ventana-buscador, #ventana-valoraciones, #ventana-servicios, #ventana-disponibilidad, #ventana-galeria, #ventana-editar-perfil, #ventana-editar-casa, #ventana-editar-fechas, #ventana-publicar, #ventana-contactos, #ventana-valorar-experiencia {
   width: 100%;
   height: 100%;
 	top: 0;
@@ -686,10 +670,6 @@ footer, .calendario-mes, .top-bar, .bottom-bar, .notificacion-coins {
 
 #btn-intercambio {
   border: 2px solid #3bd4ae;
-}
-
-#btn-intercambio:hover, .chat-usuario, .contacto-conectado {
-  background-color: #3bd4ae;
 }
 
 #btn-intercambio p {
@@ -731,7 +711,7 @@ footer, .calendario-mes, .top-bar, .bottom-bar, .notificacion-coins {
   border-radius: 6px;
 }
 
-#buscador-sticky, #buscador-responsive, #mensajes .foto-usuario img, #inbox .foto-usuario img, .crear-publicacion .foto-usuario img, .chat-contactos .foto-usuario img, .publicacion .foto-usuario img {
+#buscador-sticky, #buscador-responsive, #mensajes .foto-usuario img, #inbox .foto-usuario img, .crear-publicacion .foto-usuario img, .chat-contactos .foto-usuario img, .publicacion .foto-usuario img, .mensaje-articulo .foto-usuario img {
   border-radius: 50px;
 }
 
@@ -798,6 +778,10 @@ footer, .calendario-mes, .top-bar, .bottom-bar, .notificacion-coins {
   height: auto;
 }
 
+#ventana-valorar-experiencia input[type=submit] {
+  margin-left: 0px;
+}
+
 #sidebar-casa {
   padding: 0 50px;
 }
@@ -810,6 +794,12 @@ footer, .calendario-mes, .top-bar, .bottom-bar, .notificacion-coins {
 
 #ventana-disponibilidad .modal-contenido {
   padding: 30px 30px 0;
+}
+
+#articulo .btn-verde {
+	margin-top: 3px;
+	margin-left: 0px;
+  margin-right: 0px;
 }
 
 .subir-archivo .nombre-archivo {
@@ -838,7 +828,7 @@ footer, .calendario-mes, .top-bar, .bottom-bar, .notificacion-coins {
   margin: -3px;
 }
 
-.acceso .notificacion, .acceso .notificacion-coins {
+.acceso .notificacion, .acceso .notificacion-coins, .articulo .descripcion a, .articulo-relacionado .descripcion a {
   margin-left: 5px;
 }
 
@@ -916,12 +906,16 @@ footer, .calendario-mes, .top-bar, .bottom-bar, .notificacion-coins {
   background-color: rgba(242,242,242,1);
 }
 
-.redes-sociales a {
+#articulo .redes-sociales a {
+	padding: 0 10px 10px;
+}
+
+footer .redes-sociales a {
   padding: 10px;
   border-radius: 50px;
 }
 
-.redes-sociales a, .chat-contactos .foto-usuario img, .publicacion .likes-publicacion i {
+footer .redes-sociales a, .chat-contactos .foto-usuario img, .publicacion .likes-publicacion i {
   margin-right: 10px;
 }
 
@@ -946,10 +940,6 @@ footer, .calendario-mes, .top-bar, .bottom-bar, .notificacion-coins {
 
 .derecho {
   right: 0;
-}
-
-.dia-intercambio, .redes-sociales a, .chat [type=submit] {
-  background-color: #3bd4ae;
 }
 
 .chat [type=submit] {
@@ -986,7 +976,15 @@ footer, .calendario-mes, .top-bar, .bottom-bar, .notificacion-coins {
 
 .borde-inferior {
   border-bottom: 1px solid rgba(117,133,146,0.2);
-} 
+}
+
+.espacio-articulo {
+	padding: 50px 0 40px;
+}
+
+.espacio-articulo:last-child {
+	padding-bottom: 0px;
+}
 
 .registro, .acceso {
   width: auto;
@@ -1024,8 +1022,13 @@ footer, .calendario-mes, .top-bar, .bottom-bar, .notificacion-coins {
   width: 50%;
 }
 
-.modal-casa, .modal-contenido-fechas {
-  overflow: scroll;
+.modal-casa::-webkit-scrollbar, #listado-alojamientos::-webkit-scrollbar, #datos-casa::-webkit-scrollbar {
+  display: none;
+}
+
+.modal-casa, #listado-alojamientos, #datos-casa {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .modal-casa .testimonio {
@@ -1036,11 +1039,15 @@ footer, .calendario-mes, .top-bar, .bottom-bar, .notificacion-coins {
   padding-right: 20px;
 }
 
+.modal-casa, .modal-contenido-fechas, #listado-alojamientos, #datos-casa {
+  overflow-y: scroll;
+}
+
 .foto-usuario {
   overflow: hidden;
 }
 
-.testimonio .foto-usuario img, .chat-contenido .foto-usuario img, #mensajes .foto-usuario img, #inbox img, #notificaciones img, .crear-publicacion .foto-usuario img, .chat-contactos .foto-usuario img {
+.testimonio .foto-usuario img, .chat-contenido .foto-usuario img, #mensajes .foto-usuario img, #inbox img, #notificaciones img, .crear-publicacion .foto-usuario img, .mensaje-articulo .foto-usuario img {
   width: 80px;
   height: 80px;
 }
@@ -1049,7 +1056,7 @@ footer, .calendario-mes, .top-bar, .bottom-bar, .notificacion-coins {
   margin-bottom: 20px;
 }
 
-.publicacion .datos-usuario .foto-usuario img, #btn-contactos, #btn-publicar {
+.chat-contactos .foto-usuario img, .publicacion .datos-usuario .foto-usuario img, #btn-contactos, #btn-publicar {
   width: 60px;
   height: 60px;
 }
@@ -1077,7 +1084,7 @@ footer, .calendario-mes, .top-bar, .bottom-bar, .notificacion-coins {
   margin-bottom: 40px;
 }
 
-.testimonio .foto-usuario, .servicios-alojamiento img, .mensaje-leido .foto-usuario img, .mensaje-leido .foto-usuario img, .mensaje-noleido .foto-usuario img, .notificacion-noleida img, .notificacion-leida img {
+.testimonio .foto-usuario, .servicios-alojamiento img, .mensaje-leido .foto-usuario img, .mensaje-leido .foto-usuario img, .mensaje-noleido .foto-usuario img, .notificacion-noleida img, .notificacion-leida img, .mensaje-articulo .foto-usuario img {
   margin-right: 20px;
 }
 
@@ -1120,6 +1127,10 @@ footer, .calendario-mes, .top-bar, .bottom-bar, .notificacion-coins {
   border-bottom-color: transparent;
   border-left-color: transparent;
   border-right-color: #758592;
+}
+
+#blog .paginacion-listado {
+  margin-top: 20px;
 }
 
 .paginacion-listado a, .top-bar, .bottom-bar, .middle, .chat-usuario, .chat-anfitrion {
@@ -1232,6 +1243,14 @@ footer, .calendario-mes, .top-bar, .bottom-bar, .notificacion-coins {
   margin-left: 10px;
 }
 
+.respuesta-mensaje {
+	margin-left: 100px;
+}
+
+.respuesta-mensaje, .frase-respuesta {
+  padding-top: 10px;
+}
+
 .menu-responsive {
   align-items: center;
   justify-content: flex-end;
@@ -1247,12 +1266,16 @@ footer, .calendario-mes, .top-bar, .bottom-bar, .notificacion-coins {
   border-radius: 50px;
 }
 
-.buscador label, .dias ul li, .modal-calendar .dias td, .fechas-disponibles .dias td, #menu-usuario .notificacion, #menu-usuario .notificacion-coins, #nota-evaluacion, #menu-casa-responsive p, .area-usuario-menu .notificacion, .area-usuario-menu .notificacion-coins, .resultado-busqueda p, .alojamiento-buscador .caracteristica-casa, .alojamiento-buscador .experiencia-casa, .descripcion-promo, #ventana-editar-casa .portada-alojamiento button i {
+.buscador label, .dias ul li, .modal-calendar .dias td, .fechas-disponibles .dias td, #menu-usuario .notificacion, #menu-usuario .notificacion-coins, #nota-evaluacion, #menu-casa-responsive p, .area-usuario-menu .notificacion, .area-usuario-menu .notificacion-coins, .resultado-busqueda p, .alojamiento-buscador .caracteristica-casa, .alojamiento-buscador .experiencia-casa, .descripcion-promo, #ventana-editar-casa .portada-alojamiento button i, .articulo .categoria, .articulo:nth-child(6n+1) .descripcion a, .articulo .descripcion, .opciones-mensaje p {
   font-size: 14px;
 }
 
-.modal-calendar .calendario-dia td, .fechas-disponibles .calendario-dia td, .experiencia-casa, .valoracion-casa, .formulario-registro button, #datos-registro-disponibilidad .fechas-disponibles .dias td, .publicacion .datos-usuario .tiempo-contacto {
+.modal-calendar .calendario-dia td, .fechas-disponibles .calendario-dia td, .experiencia-casa, .valoracion-casa, .formulario-registro button, #datos-registro-disponibilidad .fechas-disponibles .dias td, .publicacion .datos-usuario .tiempo-contacto, .articulo:nth-child(6n+1) .categoria, .articulo:nth-child(6n+1) .descripcion {
   font-size: 16px;
+}
+
+.articulo-relacionado h3 {
+	font-size: 16px !important;
 }
 
 .buscador input[type=text], .buscador input[type=number], .buscador input[type=email], .crear-publicacion textarea, .caja-texto input[type=text] {
@@ -1304,7 +1327,7 @@ footer, .calendario-mes, .top-bar, .bottom-bar, .notificacion-coins {
   border-bottom: 3px solid #f5b335;
 }
 
-.btn-verde, .evaluacion:after, .text-intercambio, #btn-publicar, #boton-cerrar i {
+#btn-intercambio:hover, .chat-usuario, .contacto-conectado, .btn-verde, .evaluacion:after, .text-intercambio, #btn-publicar, #boton-cerrar i, .dia-intercambio, footer .redes-sociales a, .chat [type=submit] {
 	background-color: #3bd4ae;
 }
 
@@ -1334,11 +1357,11 @@ footer, .calendario-mes, .top-bar, .bottom-bar, .notificacion-coins {
   border-radius: 30px;
 }
 
-.btn-verde, .btn-naranja, .btn-rojo, .btn-buscador, .experiencia-casa {
+.btn-verde, .btn-naranja, .btn-rojo, .btn-buscador, .experiencia-casa, .articulo .descripcion a, .articulo-relacionado .descripcion a {
 	font-weight: 500;
 }
 
-.btn-verde, .btn-naranja, .btn-rojo, .btn-buscador, .btn-buscador:hover, .btn-verde:hover, .btn-naranja:hover, .btn-azul-izquierda:hover, .btn-azul-derecha:hover, .btn-azul-izquierda, .btn-azul-derecha, .footer li a, #menu-usuario a, .area-usuario-menu a, .submenu-area-usuario a {
+.btn-verde, .btn-naranja, .btn-rojo, .btn-buscador, .btn-buscador:hover, .btn-verde:hover, .btn-naranja:hover, .btn-azul-izquierda:hover, .btn-azul-derecha:hover, .btn-azul-izquierda, .btn-azul-derecha, .footer li a, #menu-usuario a, .area-usuario-menu a, .submenu-area-usuario a, .redes-sociales a {
 	text-decoration: none;
 	transition: all .2s ease-out;
 }
@@ -1361,11 +1384,16 @@ footer, .calendario-mes, .top-bar, .bottom-bar, .notificacion-coins {
 	border-radius: 20px 50px 50px 20px;
 }
 
+.frase-respuesta {
+  margin-bottom: 4px;
+}
+
 .politicas {
 	text-align: right;
 }
 
 .header {
+  top: 0;
   width: 100%;
   z-index: 3;
 }
@@ -1383,8 +1411,7 @@ footer, .calendario-mes, .top-bar, .bottom-bar, .notificacion-coins {
   padding: 0;
 }
 
-.header li a, .publicacion .descripcion-publicacion a {
-  /*display: block;*/
+.header li a, .publicacion .descripcion-publicacion a, .articulo a, .articulo-relacionado a {
   text-decoration: none;
 }
 
@@ -1516,17 +1543,13 @@ footer, .calendario-mes, .top-bar, .bottom-bar, .notificacion-coins {
   box-shadow: 0px 0px 20px rgb(80 80 80 / 10%);
 }
 
-.submenu li a {
+.submenu li a, .articulo h2, .articulo-relacionado h3, #articulo h1 {
 	padding: 0;
-	text-transform: capitalize;
+	text-transform: inherit;
 }
 
 .submenu ul > li {
 	padding: 6px 0;
-}
-
-.portada-alojamiento {
-  margin-bottom: 16px;
 }
 
 .portada-alojamiento, .imagen-publicacion {
@@ -1539,16 +1562,6 @@ footer, .calendario-mes, .top-bar, .bottom-bar, .notificacion-coins {
 .portada-alojamiento img, .imagen-publicacion img, .imagen-alojamiento img, .opciones-calendario {
   width: 100%;
 }
-
-/*.imagen-alojamiento {
-  height: 180px;
-  overflow: hidden;
-  border-radius: 12px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url(../img/casa-moonlight.jpg);
-}*/
 
 .nombre-casa, .opciones-calendario {
   margin-top: 20px;
@@ -1573,11 +1586,11 @@ footer, .calendario-mes, .top-bar, .bottom-bar, .notificacion-coins {
   padding: 60px 0 40px;
 }
 
-.footer h4, .menu-responsive i, , #nombre-huespede, #descripcion-casa p, #descripcion-zona p, #servicios-alojamiento p, #normas-alojamiento p, .valoracion-anfitrion span, .valoracion-anfitrion p, #datos-casa .caracteristica-casa, .chat input[type=text], .chat [type=submit], .buscador-contacto input[type=text], .caja-texto input[type=text], .area-usuario-menu a, .titulo-dato, .formulario-registro label, .nombre-notificacion, #notificaciones button i, .ultimo-mensaje, .alojamiento-buscador .lugar-casa, .alojamiento-reciente .lugar-casa, #fecha-registro, .promo-coins, #boton-cerrar {
+.footer h4, .menu-responsive i, , #nombre-huespede, #descripcion-casa p, #descripcion-zona p, #servicios-alojamiento p, #normas-alojamiento p, .valoracion-anfitrion span, .valoracion-anfitrion p, #datos-casa .caracteristica-casa, .chat input[type=text], .chat [type=submit], .buscador-contacto input[type=text], .caja-texto input[type=text], .area-usuario-menu a, .titulo-dato, .formulario-registro label, .nombre-notificacion, #notificaciones button i, .ultimo-mensaje, .alojamiento-buscador .lugar-casa, .alojamiento-reciente .lugar-casa, #fecha-registro, .promo-coins, #boton-cerrar, .articulo:nth-child(6n+1) .descripcion {
   font-size: 18px;
 }
 
-.publicacion .descripcion-publicacion, .publicacion .nombre-usuario {
+.publicacion .descripcion-publicacion, .nombre-usuario, .frase-respuesta {
   font-size: 18px !important;
 }
 
@@ -1600,10 +1613,6 @@ footer, .calendario-mes, .top-bar, .bottom-bar, .notificacion-coins {
 
 .pie-footer {
   border-top: 1px solid #fff;
-}
-
-.pie-footer, .acceso .notificacion, .notificacion-coins, .chat-escribiendo, .editar-dato, .opciones-comentario {
-  font-size: 12px;
 }
 
 .ventana-cookies {
@@ -1651,7 +1660,7 @@ footer, .calendario-mes, .top-bar, .bottom-bar, .notificacion-coins {
   padding: 0 20px 20px;
 }
 
-.modal-calendar, .modal-contenido {
+.modal-calendar, .modal-contenido, .articulo .contenido-articulo {
   padding: 30px;
 }
 
@@ -1739,6 +1748,95 @@ footer, .calendario-mes, .top-bar, .bottom-bar, .notificacion-coins {
   height: 100%;
   display: block;
   cursor: pointer;
+}
+
+.articulo {
+  -ms-flex: 1 1 450px;
+  flex: 1 1 450px;
+  display: flex;
+  flex-direction: column;
+}
+
+.articulo-relacionado {
+  -ms-flex: 1 1 200px;
+  flex: 1 1 200px;
+  display: flex;
+  border-radius: 18px;
+  flex-direction: column;
+}
+
+.articulo, .articulo-relacionado {
+  padding: 0;
+  overflow: hidden;
+  margin: 20px 10px;
+  background: #fff;
+  background-size: cover;
+}
+
+.articulo-relacionado .imagen-articulo {
+	height: 140px;
+}
+
+.articulo .imagen-articulo {
+	height: 180px;
+}
+
+.articulo .imagen-articulo, .articulo-relacionado .imagen-articulo {
+  width: auto;
+  overflow: hidden;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+
+.articulo .imagen-articulo img, .articulo-relacionado .imagen-articulo img {
+  width: 100%;
+}
+
+.articulo-relacionado .contenido-articulo {
+	padding: 20px;
+}
+
+.articulo .contenido-articulo, .articulo-relacionado .contenido-articulo {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.articulo:nth-child(6n+1) {
+  -ms-flex: 1 1 100%;
+  flex: 1 1 100%;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.articulo:nth-child(6n+1) .enlace-articulo {
+  position: relative;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.articulo:nth-child(6n+1) .imagen-articulo, .articulo:nth-child(6n+1) .enlace-articulo {
+  width: 100%;
+  height: 100%;
+}
+
+.articulo:nth-child(6n+1) .contenido-articulo {
+  width: 50%;
+}
+
+.articulo:nth-child(6n+1) .imagen-articulo img {
+  bottom: 0;
+  height: 100%;
+}
+
+.articulo:nth-child(6n+4), .articulo:nth-child(6n+5), .articulo:nth-child(6n+6) {
+  -ms-flex: 1 1 300px;
+  flex: 1 1 300px;
+}
+
+.contenido-mensaje {
+	width: 87%;
 }
 
 #chatbox {
@@ -1881,6 +1979,34 @@ footer, .calendario-mes, .top-bar, .bottom-bar, .notificacion-coins {
   background-color: #f5b335;
   position: relative;
   border-radius: 50%;
+}
+
+.stars {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: start;
+}
+
+.stars input {
+  display: none;
+}
+
+.stars label {
+  width: 40px;
+  height: 60px;
+  float: right;
+  margin: 10px 10px 0 0;
+}
+
+.stars label:before {
+  content: url(../img/nomad-gris.svg);
+}
+
+.stars input:checked ~ label {
+  width: 40px;
+  height: 47px;
+  margin-bottom: 13px;
+  content: url(../img/nomad-naranja.svg);
 }
 
 .f-modal-alert, .modal-calendar, .modal-casa, .modal-contenido-fechas, .chatbox {
@@ -2248,6 +2374,10 @@ footer, .calendario-mes, .top-bar, .bottom-bar, .notificacion-coins {
     font-size: 16px;
   }
 
+  .espacio-alto {
+  	padding-top: 0;
+  }
+
   .coins-menu p {
     margin-bottom: 2px;
   }
@@ -2267,6 +2397,37 @@ footer, .calendario-mes, .top-bar, .bottom-bar, .notificacion-coins {
     font-weight: 500;
     text-transform: uppercase;
     font-family: 'Josefin Sans', sans-serif;
+  }
+
+  .articulo, .articulo:nth-child(6n+1) {
+    -ms-flex: 1 1 40%;
+    flex: 1 1 40%;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .articulo:nth-child(6n+1) .contenido-articulo {
+    width: 100%;
+  }
+
+  .articulo:nth-child(6n+1) h2 {
+  	font-size: 24px;
+  }
+
+  .articulo:nth-child(6n+1) .descripcion, .articulo:nth-child(6n+1) .categoria {
+  	font-size: 14px;
+  }
+
+  .articulo:nth-child(6n+1) .descripcion a {
+  	font-size: 12px;
+  }
+
+  .articulo:nth-child(6n+1) .imagen-articulo, .articulo:nth-child(6n+1) .enlace-articulo {
+  	height: 180px;
+  }
+
+  .articulo .imagen-articulo img {
+    bottom: 0;
   }
 
   #inicio {
@@ -2381,6 +2542,10 @@ footer, .calendario-mes, .top-bar, .bottom-bar, .notificacion-coins {
     margin-bottom: 20px;
   }
 
+  #inicio h1 {
+  	font-size: 32px;
+  }
+
   #buscador-modal {
     margin-top: 0px;
   }
@@ -2438,12 +2603,24 @@ footer, .calendario-mes, .top-bar, .bottom-bar, .notificacion-coins {
 		font-size: 42px;
 	}
 
-	h2 {
+	h2, #articulo h1 {
 		font-size: 32px;
 	}
 
   footer h4 {
     margin-top: 10px;
+  }
+
+  .articulo-relacionado h3 {
+    font-size: 24px;
+  }
+
+  .articulo-relacionado .descripcion, .articulo-relacionado .categoria {
+    font-size: 14px;
+  }
+
+  .articulo-relacionado .descripcion a {
+    font-size: 12px;
   }
 
   .politicas {
@@ -2462,7 +2639,7 @@ footer, .calendario-mes, .top-bar, .bottom-bar, .notificacion-coins {
     justify-content: space-between;
   }
 
-  .testimonio .foto-usuario img, .chat-contenido .foto-usuario img, #mensajes .foto-usuario img, #inbox img, #notificaciones img {
+  .testimonio .foto-usuario img, .chat-contenido .foto-usuario img, #mensajes .foto-usuario img, #inbox img, #notificaciones img, .mensaje-articulo .foto-usuario img {
     width: 60px;
     height: 60px;
   }
@@ -2501,6 +2678,18 @@ footer, .calendario-mes, .top-bar, .bottom-bar, .notificacion-coins {
 
   .texto-emisor {
     width: 80%;
+  }
+
+  .respuesta-mensaje {
+    margin-left: 70px;
+  }
+
+  #inicio {
+  	margin-top: 90px;
+  }
+
+  #inicio h1 {
+    font-size: 18px;
   }
 
   #timeline {
@@ -2560,6 +2749,10 @@ footer, .calendario-mes, .top-bar, .bottom-bar, .notificacion-coins {
     margin: 0 5px;
   }
 
+  #articulo .btn-verde {
+    margin-top: 0px;
+  }
+
   #timeline-casa #paso-uno p, #timeline-casa #paso-tres p {
     text-align: left;
   }
@@ -2590,6 +2783,22 @@ footer, .calendario-mes, .top-bar, .bottom-bar, .notificacion-coins {
   #buscador-modal #boton-cerrar {
     display: flex;
     justify-content: end;
+  }
+
+  .logo-blanco, .acceso-blanco {
+  	display: none;
+  }
+
+  .logo-color, .acceso-color {
+  	display: block;
+  }
+
+  .logo-color {
+    height: 50px;
+  }
+
+  .header .menu-icon .navicon, .header .menu-icon .navicon:before, .header .menu-icon .navicon:after {
+    background: #243746;
   }
 
   .testimonio {
