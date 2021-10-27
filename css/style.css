@@ -493,10 +493,6 @@ li:hover ul.submenu {
 	visibility: visible;
 }
 
-.sticky li:hover ul.submenu  {
-  right: 600px;
-}
-
 .menu-usuario {
   top: 70px;
   opacity: 1;
@@ -2529,6 +2525,16 @@ footer .redes-sociales a, .chat-contactos .foto-usuario img, .publicacion .likes
   }
 }
 
+@media (max-width: 1199px) {
+  .header .menu, .registro, .acceso, #inicio .buscador, .sticky #buscador-sticky, #mapa-experiencia, #sidebar-casa, #chat-contactos, .area-usuario-menu, #comunidad .crear-publicacion, .info-usuario {
+    display: none;
+  }
+
+  .menu-responsive {
+    display: flex;
+  }
+}
+
 @media (max-width: 1024px) {
   nav ul > li {
     padding: 5px 13px;
@@ -2640,16 +2646,8 @@ footer .redes-sociales a, .chat-contactos .foto-usuario img, .publicacion .likes
     align-items: center;
   }
 
-  .header .menu, .registro, .acceso, #inicio .buscador, .sticky #buscador-sticky, #mapa-experiencia, #sidebar-casa, #chat-contactos, .area-usuario-menu, #comunidad .crear-publicacion, .info-usuario {
-    display: none;
-  }
-
   .coins-menu a {
     margin-right: 5px;
-  }
-
-  .menu-responsive {
-    display: flex;
   }
 
 	.f-modal-alert {
